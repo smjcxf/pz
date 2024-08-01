@@ -15,13 +15,12 @@
 # 删除原版 luci-app-passwall 软件包
 rm -rf feeds/luci/applications/luci-app-passwall
 
-# 克隆指定软件包的远程仓库
-git clone https://github.com/xiaorouji/openwrt-passwall feeds/passwall
+# 将 luci-app-passwall 从 feeds/passwall 复制到 feeds/luci/applications
+cp -r feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
 
-# 更新和安装指定的软件包
-cd openwrt
+# 更新并安装 passwall feed 中的所有包
 ./scripts/feeds update passwall
 ./scripts/feeds install -a -p passwall
 
-# 将 luci-app-passwall 从 feeds/passwall/luci-app-passwall 复制到 feeds/luci/applications/luci-app-passwall
-cp -r feeds/passwall/luci-app-passwall feeds/luci/applications/luci-app-passwall
+# 安装 feeds/luci/applications 中的 luci-app-passwall
+./scripts/feeds install luci-app-passwall
