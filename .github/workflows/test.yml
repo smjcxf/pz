@@ -12,8 +12,6 @@ name: test-23.05-OpenWrt
 
 on:
   repository_dispatch:
-  schedule:
-    - cron: 0 23 * * 1
   workflow_dispatch:
     inputs:
       ssh:
@@ -22,12 +20,12 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/padavanonly/immortalwrt-mt798x
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: lede.config
-  DIY_P1_SH: diy-part1-lede.sh
-  DIY_P2_SH: diy-part2-lede.sh
+  DIY_P1_SH: diy-part1-test.sh
+  DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -233,6 +231,7 @@ jobs:
         body: |
           **This is OpenWrt Firmware for XiaoMi AX3000T**
           ### 📒 固件信息
+          - 💻 尝试编译test   勿刷
           - 💻 平台架构: mediatek-filogic
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
