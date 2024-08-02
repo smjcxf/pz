@@ -13,6 +13,7 @@
 # Add a feed source
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
 echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
+echo 'src-git runtime https://github.com/shineTripodcat/openwrt-luci-lua-runtime.git' >>feeds.conf.default
 
 
 # 修改版本为编译日期
