@@ -9,6 +9,9 @@
 # File name: diy-part1.sh
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
+git clone https://github.com/openwrt/openwrt
+mv openwrt/package/utils/ucode package/utils/
+rm -rf openwrt
 
 # Add a feed source
 #echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
