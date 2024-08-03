@@ -14,7 +14,7 @@ mv openwrt/package/utils/ucode package/utils/
 rm -rf openwrt
 
 # Add a feed source
-#echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
+echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
 echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
 #echo 'src-git luci_lua_runtime https://github.com/openwrt/luci/tree/master/modules/luci-lua-runtime' >>feeds.conf.default
 #echo 'src-git luci_lua_runtime https://github.com/shineTripodcat/runtime' >>feeds.conf.default
