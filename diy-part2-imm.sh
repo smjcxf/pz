@@ -10,7 +10,6 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
-./scripts/feeds update -a
 ./scripts/feeds install -a
 
 # Modify default IP
