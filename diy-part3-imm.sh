@@ -4,6 +4,8 @@
 # Description: OpenWrt DIY script part 3 (After Update feeds)
 #
 
+./scripts/feeds update -a
+
 # 删除现有的 luci-app-passwall 软件包
 #rm -rf feeds/luci/applications/luci-app-passwall
 
@@ -17,8 +19,6 @@
 #rm -rf package/luci-app-passwall
 # 删除 /feeds/passwall_package/sing-box 目录
 #rm -rf feeds/passwall_package/sing-box
-
-./scripts/feeds update -a
 
 #rm -rf feeds/luci/applications/luci-app-mosdns
 #rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,smartdns}
