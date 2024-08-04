@@ -24,7 +24,6 @@ jobs:
           repos[lede]="https://github.com/coolsnowwolf/lede"
           repos[immortalwrt]="https://github.com/immortalwrt/immortalwrt"
           repos[immortalwrt-mt798x]="https://github.com/padavanonly/immortalwrt-mt798x"
-
           echo "REPO_URL=${repos[${{ github.event.inputs.repo }}]}" >> $GITHUB_ENV
 
       - name: Checkout repository
@@ -38,7 +37,7 @@ jobs:
         run: |
           branches=$(git branch -r | grep -v '\->' | sed 's/origin\///' | tr '\n' ',' | sed 's/,$//')
           echo "branches=${branches}" >> $GITHUB_ENV
-          echo "::set-output name=branch_list::${branches}"
+          echo "branch_list=${branches}" >> $GITHUB_ENV  # 使用环境变量替代 set-output
 
       - name: Output branches
-        run: echo "Branches: ${{ steps.get_branches.outputs.branch_list }}"
+        run: echo "Branches: ${{ env.branch_list }}"  # 从环境变量中读取
