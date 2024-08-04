@@ -18,6 +18,6 @@ rm -rf feeds/luci/applications/luci-app-passwall
 # 删除临时克隆目录
 #rm -rf package/luci-app-passwall
 # 删除 /feeds/passwall_package/sing-box 目录
-#rm -rf feeds/passwall_package/sing-box
+rm -rf feeds/passwall_package/sing-box
 
 ./scripts/feeds update -a
