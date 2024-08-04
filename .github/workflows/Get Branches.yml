@@ -1,4 +1,4 @@
-name: Get Branches#获取分支列表
+name: Get Branches
 
 on:
   workflow_dispatch:
@@ -12,8 +12,6 @@ on:
           - 'lede'
           - 'immortalwrt'
           - 'immortalwrt-mt798x'
-          # 在这里可以方便地添加更多选项
-          # - 'new_repo_name'
 
 jobs:
   get-branches:
@@ -26,8 +24,6 @@ jobs:
           repos[lede]="https://github.com/coolsnowwolf/lede"
           repos[immortalwrt]="https://github.com/immortalwrt/immortalwrt"
           repos[immortalwrt-mt798x]="https://github.com/padavanonly/immortalwrt-mt798x"
-          # 在这里可以方便地添加更多的仓库
-          # repos[new_repo_name]="https://github.com/user/new_repo"
 
           echo "REPO_URL=${repos[${{ github.event.inputs.repo }}]}" >> $GITHUB_ENV
 
@@ -35,7 +31,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: ${{ env.REPO_URL }}
-          ref: main  # 这里可以指定默认分支
+          ref: main
 
       - name: Get branches
         id: get_branches
