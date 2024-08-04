@@ -238,13 +238,13 @@ jobs:
         body: |
           **This is OpenWrt Firmware for XiaoMi AX3000T**
           ### 📒 固件信息
-          - 💻 尝试编译test   勿刷
           - 💻 平台架构: mediatek-filogic
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
           - 🚀 内核版本: ${{ env.KERNEL }}
           - 🌐 默认地址: 192.168.50.1
-          - 🔑 默认密码: password
+          - 🔑 默认密码: passwordimmortalwrt
+          - 👌 使用方法：在uboot中选择immortalwrt-112m选项刷入squashfs-factory格式固件，如果原本为immortalwrt-21.02固件的话可下载squashfs-sysupgrade在web页面更新升级中使用。
           ### 🧊 固件版本
           - 固件编译前最后一次➦[主源码](${{ env.REPO_URL }})更新记录
           - ${{ env.COMMIT_AUTHOR }}
