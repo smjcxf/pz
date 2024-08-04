@@ -37,7 +37,9 @@ jobs:
         run: |
           branches=$(git branch -r | grep -v '\->' | sed 's/origin\///' | tr '\n' ',' | sed 's/,$//')
           echo "branches=${branches}" >> $GITHUB_ENV
-          echo "branch_list=${branches}" >> $GITHUB_ENV  # 使用环境变量替代 set-output
+          echo "branch_list=${branches}" >> $GITHUB_ENV
 
       - name: Output branches
-        run: echo "Branches: ${{ env.branch_list }}"  # 从环境变量中读取
+        run: echo "Branches: $branch_list"  # 直接使用环境变量
+        env:
+          branch_list: ${{ env.branch_list }}  # 将环境变量传递给当前步骤
