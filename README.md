@@ -11,7 +11,7 @@
 
 3.添加了zram内存压缩插件（要想正常使用请刷好后手动在软件包里下载 `zram-swap` ）
 
-4.immortalwrt-21.02更换为了添加了闭源驱动的源码。
+4.immortalwrt-21.02更换为添加了闭源驱动的源码。
 
 5.替换了immortalwrt-21.02中了passwall的源码并打包了所有组件（sing-box未编译，可在软件内更新）
 
