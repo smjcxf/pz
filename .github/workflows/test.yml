@@ -8,9 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: OpenWrt Build
-
-name: OpenWrt Build
+name: test-OpenWrt
 
 on:
   repository_dispatch:
@@ -26,7 +24,7 @@ on:
       branch:
         description: 'Select branch'
         required: true
-        default: 'master'  # 默认分支，可以根据需要调整
+        default: 'main'  # 默认分支，可以根据需要调整
 
 env:
   REPO_URLS:
@@ -39,7 +37,7 @@ env:
     lede-23.05: 'main'  # 默认分支，可以根据需要修改
     immortalwrt-21.05: 'main'  # 默认分支，可以根据需要修改
     # 可以在这里添加更多选项
-  REPO_BRANCH: ${{ env.REPO_BRANCHES[github.event.inputs.repo] }}
+  REPO_BRANCH: ${{ github.event.inputs.branch }}
 
   CONFIG_FILES:
     lede-23.05: 'lede.config'
