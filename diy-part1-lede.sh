@@ -39,8 +39,8 @@ git clone --depth=1 https://github.com/sirpdboy/luci-app-ddns-go.git package/ddn
 
 # 科学上网插件
 # git clone --depth=1 -b main https://github.com/fw876/helloworld package/luci-app-ssr-plus
-git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
-git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
+#git clone --depth=1 -b lede https://github.com/pymumu/luci-app-smartdns package/luci-app-smartdns
+#git clone --depth=1 https://github.com/pymumu/openwrt-smartdns package/smartdns
 
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon package/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/luci-app-argon-config
@@ -51,8 +51,8 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/l
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
 echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
 
-sed -i "/helloworld/d" "feeds.conf.default"
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
+#sed -i "/helloworld/d" "feeds.conf.default"
+#echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
 
 
 #git_sparse_clone main https://github.com/linkease/nas-packages-luci luci/luci-app-ddnsto
