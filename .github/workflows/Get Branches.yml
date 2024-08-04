@@ -1,4 +1,4 @@
-name: Get Branches
+name: Generate Branches File
 
 on:
   workflow_dispatch:
@@ -14,7 +14,7 @@ on:
           - 'immortalwrt-mt798x'
 
 jobs:
-  get-branches:
+  generate-branches:
     runs-on: ubuntu-latest
     steps:
       - name: Set repository URL
@@ -33,28 +33,16 @@ jobs:
           ref: main
 
       - name: Get branches
-        id: get_branches
         run: |
           branches=$(git branch -r | grep -v '\->' | sed 's/origin\///' | tr '\n' ',' | sed 's/,$//')
-          echo "branches=${branches}" >> $GITHUB_ENV
-          echo "branch_list=${branches}" >> $GITHUB_ENV
+          echo "Branches: $branches" > branches.txt
 
-      - name: Modify branches.txt
-        run: |
-          # 如果文件存在，则读取并修改内容
-          if [ -f branches.txt ]; then
-            echo "Existing branches: $(cat branches.txt)"
-          else
-            echo "No existing branches.txt found."
-          fi
-          echo "Branches: ${{ env.branch_list }}" > branches.txt
-
-      - name: Commit and push modified branches.txt
+      - name: Commit and push branches.txt
         run: |
           git config --local user.name "github-actions"
           git config --local user.email "github-actions@github.com"
           git add branches.txt
-          git commit -m "Update branches list"
+          git commit -m "Add branches list"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
