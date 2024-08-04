@@ -1,0 +1,48 @@
+name: Get Branches#获取分支列表
+
+on:
+  workflow_dispatch:
+    inputs:
+      repo:
+        description: '选择源码'
+        required: true
+        default: 'lede'
+        type: choice
+        options:
+          - 'lede'
+          - 'immortalwrt'
+          - 'immortalwrt-mt798x'
+          # 在这里可以方便地添加更多选项
+          # - 'new_repo_name'
+
+jobs:
+  get-branches:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set repository URL
+        id: set_repo_url
+        run: |
+          declare -A repos
+          repos[lede]="https://github.com/coolsnowwolf/lede"
+          repos[immortalwrt]="https://github.com/immortalwrt/immortalwrt"
+          repos[immortalwrt-mt798x]="https://github.com/padavanonly/immortalwrt-mt798x"
+          # 在这里可以方便地添加更多的仓库
+          # repos[new_repo_name]="https://github.com/user/new_repo"
+
+          echo "REPO_URL=${repos[${{ github.event.inputs.repo }}]}" >> $GITHUB_ENV
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          repository: ${{ env.REPO_URL }}
+          ref: main  # 这里可以指定默认分支
+
+      - name: Get branches
+        id: get_branches
+        run: |
+          branches=$(git branch -r | grep -v '\->' | sed 's/origin\///' | tr '\n' ',' | sed 's/,$//')
+          echo "branches=${branches}" >> $GITHUB_ENV
+          echo "::set-output name=branch_list::${branches}"
+
+      - name: Output branches
+        run: echo "Branches: ${{ steps.get_branches.outputs.branch_list }}"
