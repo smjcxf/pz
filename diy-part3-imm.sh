@@ -4,10 +4,10 @@
 # Description: OpenWrt DIY script part 3 (After Update feeds)
 #
 
-./scripts/feeds update -a
+
 
 # 删除现有的 luci-app-passwall 软件包
-#rm -rf feeds/luci/applications/luci-app-passwall
+rm -rf feeds/luci/applications/luci-app-passwall
 
 # 克隆新的 luci-app-passwall 软件包
 #git clone --depth=1 https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
@@ -25,3 +25,5 @@
 #rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+
+./scripts/feeds update -a
