@@ -11,7 +11,6 @@
 name: test-OpenWrt
 
 on:
-  repository_dispatch:
   workflow_dispatch:
     inputs:
       repo:
@@ -22,34 +21,52 @@ on:
         options:
           - 'lede-23.05'
           - 'immortalwrt-21.05'
-          - 'immortalwrt-mt798x'  # 添加更多选项
       branch:
         description: '选择分支'
         required: true
-        default: 'main'  # 默认分支，可以根据需要调整
+        default: 'main'
         type: choice
-        options: ${{ fromJson(steps.get_branches.outputs.branch_list) }}  # 使用第一份工作流的分支列表
+        options:
+          - 'main'
+          - 'master'
+      CONFIG_FILE:
+        description: '请选择配置文件'
+        required: true
+        default: 'lede.config'
+        type: choice
+        options:
+          - 'lede.config'
+          - 'imm.config'
+      SSH_ACTION:
+        description: 'SSH远程配置固件'
+        required: false
+        default: 'false'
+        type: boolean
+      UPLOAD_FIRMWARE:
+        description: '上传固件到 Github Artifacts'
+        required: false
+        default: 'true'
+        type: boolean
+      UPLOAD_RELEASE:
+        description: '发布固件到 Github Releases'
+        required: false
+        default: 'false'
+        type: boolean
 
 env:
   REPO_URLS:
     lede-23.05: 'https://github.com/coolsnowwolf/lede'
-    immortalwrt-21.05: 'https://github.com/immortalwrt/immortalwrt'
-    immortalwrt-mt798x: 'https://github.com/padavanonly/immortalwrt-mt798x'
-    # 可以在这里添加更多选项
+    immortalwrt-21.05: 'https://github.com/padavanonly/immortalwrt-mt798x'
   REPO_URL: ${{ env.REPO_URLS[github.event.inputs.repo] }}
-  
+
   REPO_BRANCHES:
-    lede-23.05: 'main'  # 默认分支，可以根据需要修改
-    immortalwrt-21.05: 'main'  # 默认分支，可以根据需要修改
-    immortalwrt-mt798x: 'main'  # 默认分支，可以根据需要修改
-    # 可以在这里添加更多选项
+    lede-23.05: 'main'
+    immortalwrt-21.05: 'main'
   REPO_BRANCH: ${{ github.event.inputs.branch }}
 
   CONFIG_FILES:
     lede-23.05: 'lede.config'
     immortalwrt-21.05: 'imm.config'
-    immortalwrt-mt798x: 'imm-mt798x.config'
-    # 可以在这里添加更多选项
   CONFIG_FILE: ${{ env.CONFIG_FILES[github.event.inputs.repo] }}
 
   DIY_SCRIPTS:
@@ -60,10 +77,6 @@ env:
       P1: 'diy-part1-imm.sh'
       P2: 'diy-part2-imm.sh'
       P3: 'diy-part3-imm.sh'
-    immortalwrt-mt798x:
-      P1: 'diy-part1-mt798x.sh'
-      P2: 'diy-part2-mt798x.sh'
-    # 可以在这里添加更多选项
 
   DIY_P1_SH: ${{ env.DIY_SCRIPTS[github.event.inputs.repo].P1 }}
   DIY_P2_SH: ${{ env.DIY_SCRIPTS[github.event.inputs.repo].P2 }}
@@ -72,13 +85,8 @@ env:
   FEEDS_CONF: 'feeds.conf.default'
 
   UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: true
-  UPLOAD_COWTRANSFER: false
-  UPLOAD_WETRANSFER: false
-  UPLOAD_RELEASE: true
   CACHE_TOOLCHAIN: true
   TZ: Asia/Shanghai
-
 
 
 jobs:
