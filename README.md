@@ -4,13 +4,16 @@
 
 ## 固件修改说明
 
-### 默认固件配置修改（相对lede默认配置而言）
-
+### 默认固件配置修改
 1.添加ipv6支持
 
 2.添加了argon主题配置插件 `luci-app-argon-config`
 
 3.添加了zram内存压缩插件（要想正常使用请刷好后手动在软件包里下载 `zram-swap` ）
+
+4.immortalwrt-21.02更换为了添加了闭源驱动的源码。
+
+5.替换了immortalwrt-21.02中了passwall的源码并打包了所有组件（sing-box未编译，可在软件内更新）
 
 ### 编译工作流文件修改（编译完成会报错出现红×，这不影响，固件会正常编译出来）
 
@@ -24,7 +27,10 @@
 
 ### 使用方法一
 
-直接到[Releases](https://github.com/shineTripodcat/Xiaomi-ax3000t-openwrt/releases)中下载已经编译好的固件，刷squashfs-sysupgrade格式的就可以，不行就先刷initramfs-kernel然后再到后台去升级为squashfs-sysupgrade格式的固件。
+直接到[Releases](https://github.com/shineTripodcat/Xiaomi-ax3000t-openwrt/releases)中下载已经编译好的固件。
+lede的代码就下载squashfs-sysupgrade格式再uboot中选择qwrt的选项刷入。
+immortalwrt的代码就下载squashfs-factory的格式在uboot中选择immortalwrt-112M选项刷入。
+不行就先刷initramfs-kernel然后再到后台去升级为squashfs-sysupgrade格式的固件。
 
 ### 使用方法二
 
@@ -93,7 +99,7 @@
 
 ## 其他
 
-1.默认的登录ip是 `192.168.1.1`
+1.默认的登录ip是 `192.168.50.1`
 
 2.默认登录密码是 `password`
 
