@@ -39,7 +39,22 @@ jobs:
           echo "branches=${branches}" >> $GITHUB_ENV
           echo "branch_list=${branches}" >> $GITHUB_ENV
 
-      - name: Output branches
-        run: echo "Branches: $branch_list"  # 直接使用环境变量
+      - name: Modify branches.txt
+        run: |
+          # 如果文件存在，则读取并修改内容
+          if [ -f branches.txt ]; then
+            echo "Existing branches: $(cat branches.txt)"
+          else
+            echo "No existing branches.txt found."
+          fi
+          echo "Branches: ${{ env.branch_list }}" > branches.txt
+
+      - name: Commit and push modified branches.txt
+        run: |
+          git config --local user.name "github-actions"
+          git config --local user.email "github-actions@github.com"
+          git add branches.txt
+          git commit -m "Update branches list"
+          git push
         env:
-          branch_list: ${{ env.branch_list }}  # 将环境变量传递给当前步骤
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
