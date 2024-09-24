@@ -36,6 +36,8 @@ git clone --depth=1 https://github.com/esirplayground/luci-app-poweroff package/
 git clone --depth=1 https://github.com/destan19/OpenAppFilter package/OpenAppFilter
 git clone --depth=1 https://github.com/Jason6111/luci-app-netdata package/luci-app-netdata
 git clone --depth=1 https://github.com/sirpdboy/luci-app-ddns-go.git package/ddns-go
+git clone --depth=1 https://github.com/morytyann/OpenWrt-mihomo/tree/main/luci-app-mihomo package/luci-app-mihomo
+git clone --depth=1 https://github.com/morytyann/OpenWrt-mihomo/tree/main/mihomo package/mihomo
 #git clone --depth=1 https://github.com/douglarek/luci-app-homeproxy package/luci-app-homeproxy
 
 # 科学上网插件
@@ -51,7 +53,7 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config package/l
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git' >>feeds.conf.default
 echo 'src-git passwall_package https://github.com/xiaorouji/openwrt-passwall-packages' >>feeds.conf.default
-echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
+#echo "src-git mihomo https://github.com/morytyann/OpenWrt-mihomo.git;main" >> "feeds.conf.default"
 
 #sed -i "/helloworld/d" "feeds.conf.default"
 #echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
