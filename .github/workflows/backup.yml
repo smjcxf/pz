@@ -14,7 +14,15 @@ jobs:
         uses: actions/checkout@v3
         with:
           token: ${{ secrets.PAT }}
-
+          
+      - name: Clone ACL4SSR_ACL4SSR
+        run: |
+          git clone --depth=1 https://github.com/xiaomaoJT/QxScript ACL4SSR_ACL4SSR
+          rm -rf "ACL4SSR(ACL4SSR)"
+          mkdir -p "ACL4SSR(ACL4SSR)"
+          mv ACL4SSR_ACL4SSR/* "ACL4SSR(ACL4SSR)/"
+          rm -rf ACL4SSR_ACL4SSR
+          
       - name: Clone xiaomaoJT_QxScript
         run: |
           git clone --depth=1 https://github.com/xiaomaoJT/QxScript xiaomaoJT_QxScript
