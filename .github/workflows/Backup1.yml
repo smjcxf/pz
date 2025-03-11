@@ -1,4 +1,4 @@
-name: Backup
+name: Backup Repositories
 
 on:
   schedule:
@@ -15,30 +15,31 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           
-      - name: Clone 1-1 with all branches
+      - name: Clone ACL4SSR_ACL4SSR and Process All Branches
         run: |
-          # 创建目标目录
-          mkdir -p "ACL4SSR(ACL4SSR)"
-          # 克隆仓库，不获取历史记录
-          git clone --no-tags --depth=1 --mirror https://github.com/cuixueshe/earthworm 1-1
-          # 进入克隆的仓库目录
-          cd 1-1
-          # 获取所有分支名
-          branches=$(git branch -r | grep -v HEAD | sed 's/origin\///')
+          # Create temporary directory for cloning
+          git clone https://github.com/ACL4SSR/ACL4SSR temp_repo
+          cd temp_repo
+          
+          # Get all branch names
+          branches=$(git branch -r | grep -v 'HEAD' | sed 's|origin/||g' | sed 's/^[ \t]*//')
+          
+          # Create main directory if it doesn't exist
+          mkdir -p "../ACL4SSR(ACL4SSR)"
+          
+          # Process each branch
           for branch in $branches; do
-            # 创建以分支名命名的文件夹
+            echo "Processing branch: $branch"
+            git checkout $branch
+            
+            # Create branch directory and copy files
             mkdir -p "../ACL4SSR(ACL4SSR)/$branch"
-            # 检出当前分支到临时目录
-            git worktree add "../tmp_$branch" $branch
-            # 将临时目录中的内容移动到目标文件夹
-            mv "../tmp_$branch"/* "../ACL4SSR(ACL4SSR)/$branch/"
-            # 删除临时工作树
-            git worktree remove "../tmp_$branch"
+            cp -r * "../ACL4SSR(ACL4SSR)/$branch/"
           done
-          # 删除克隆的仓库目录
-          cd ..
-          rm -rf 1-1
-             
+          
+          # Clean up temporary directory
+          cd .. && rm -rf temp_repo
+          
       - name: Update timestamp
         run: echo "Backup run at $(date)" > backup-timestamp.txt
         
