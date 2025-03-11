@@ -1,0 +1,61 @@
+name: Backup 
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Backup Repository
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Clone ACL4SSR_ACL4SSR
+        run: |
+          # 克隆仓库
+          git clone https://github.com/ACL4SSR/ACL4SSR ACL4SSR_ACL4SSR
+          cd ACL4SSR_ACL4SSR
+          # 获取所有远程分支
+          for branch in `git branch -r | grep -v HEAD`; do
+            git branch --track ${branch#origin/} $branch
+          done
+          # 获取所有本地分支
+          git fetch --all
+          git pull --all
+          cd ..
+          # 若目录存在则删除
+          if [ -d "ACL4SSR(ACL4SSR)" ]; then
+            rm -rf "ACL4SSR(ACL4SSR)"
+          fi
+          # 创建新目录
+          mkdir -p "ACL4SSR(ACL4SSR)"
+          # 移动文件
+          mv ACL4SSR_ACL4SSR/* "ACL4SSR(ACL4SSR)/"
+          # 删除临时克隆的目录
+          rm -rf ACL4SSR_ACL4SSR
+
+      - name: Update timestamp
+        run: echo "Backup run at $(date)" > backup-timestamp.txt
+        
+      - name: Commit and Push Changes
+        env:
+          PAT: ${{ secrets.PAT }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff-index --quiet HEAD; then
+            echo "No changes detected, adding timestamp file."
+            echo "Backup run at $(date)" > backup-timestamp.txt
+            git add backup-timestamp.txt
+            git commit -m "$(date +'%Y-%m-%d %H:%M:%S')"
+          else
+            git commit -m "Automated backup $(date +'%Y-%m-%d %H:%M:%S')"
+          fi
+          git remote set-url origin https://x-access-token:${PAT}@github.com/smjcxf/pz.git
+          git push origin main
