@@ -17,7 +17,7 @@ jobs:
           
       - name: Clone ACL4SSR_ACL4SSR
         run: |
-          git clone --depth=1 https://github.com/ACL4SSR/ACL4SSR ACL4SSR_ACL4SSR
+          git clone --depth=1 https://github.com/ACL4SSR/ACL4SSR/tree/master ACL4SSR_ACL4SSR
           rm -rf "ACL4SSR(ACL4SSR)"
           mkdir -p "ACL4SSR(ACL4SSR)"
           mv ACL4SSR_ACL4SSR/* "ACL4SSR(ACL4SSR)/"
