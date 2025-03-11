@@ -15,20 +15,15 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           
-- name: Clone ACL4SSR_ACL4SSR
-  run: |
-    # 克隆 master 分支
-    git clone --depth=1 --branch master https://github.com/ACL4SSR/ACL4SSR ACL4SSR_ACL4SSR
-    # 若目录存在则删除
-    if [ -d "ACL4SSR(ACL4SSR)" ]; then
-      rm -rf "ACL4SSR(ACL4SSR)"
-    fi
-    # 创建新目录
-    mkdir -p "ACL4SSR(ACL4SSR)"
-    # 移动文件
-    mv ACL4SSR_ACL4SSR/* "ACL4SSR(ACL4SSR)/"
-    # 删除临时克隆的目录
-    rm -rf ACL4SSR_ACL4SSR
+      - name: Clone ACL4SSR_ACL4SSR
+        run: |
+          git clone --depth=1 --branch master https://github.com/ACL4SSR/ACL4SSR ACL4SSR_ACL4SSR
+          if [ -d "ACL4SSR(ACL4SSR)" ]; then
+          rm -rf "ACL4SSR(ACL4SSR)"
+          fi
+          mkdir -p "ACL4SSR(ACL4SSR)"
+          mv ACL4SSR_ACL4SSR/* "ACL4SSR(ACL4SSR)/"
+          rm -rf ACL4SSR_ACL4SSR
     
       - name: Clone xiaomaoJT_QxScript
         run: |
