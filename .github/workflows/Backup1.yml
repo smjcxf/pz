@@ -15,14 +15,14 @@ jobs:
         with:
           token: ${{ secrets.PAT }}
           
-      - name: Clone ACL4SSR_ACL4SSR with all branches
+      - name: Clone 1-1 with all branches
         run: |
           # 创建目标目录
           mkdir -p "ACL4SSR(ACL4SSR)"
           # 克隆仓库，不获取历史记录
-          git clone --no-tags --depth=1 --mirror https://github.com/ACL4SSR/ACL4SSR ACL4SSR_ACL4SSR
+          git clone --no-tags --depth=1 --mirror https://github.com/cuixueshe/earthworm 1-1
           # 进入克隆的仓库目录
-          cd ACL4SSR_ACL4SSR
+          cd 1-1
           # 获取所有分支名
           branches=$(git branch -r | grep -v HEAD | sed 's/origin\///')
           for branch in $branches; do
@@ -37,7 +37,7 @@ jobs:
           done
           # 删除克隆的仓库目录
           cd ..
-          rm -rf ACL4SSR_ACL4SSR
+          rm -rf 1-1
              
       - name: Update timestamp
         run: echo "Backup run at $(date)" > backup-timestamp.txt
