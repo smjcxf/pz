@@ -1,4 +1,4 @@
-name: Backup Repositories
+name: Backup
 
 on:
   schedule:
