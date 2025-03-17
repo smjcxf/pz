@@ -38,6 +38,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/shineTripodcat/Xiaomi-ax3000t-openwrt.git"
-          source_branch: "master"
+          source_branch: "main"
           destination_branch: "openwrt"
           github_token: ${{ secrets.PAT || github.event.client_payload.PAT }}    
