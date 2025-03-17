@@ -19,6 +19,20 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Check if destination branch exists
+        id: check-branch
+        run: |
+          if git show-ref --verify --quiet refs/heads/openwrt; then
+            echo "destination_branch_exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "destination_branch_exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create destination branch if not exists
+        if: steps.check-branch.outputs.destination_branch_exists == 'false'
+        run: |
+          git checkout -b openwrt
+
       - name: sync scripts
         uses: repo-sync/github-sync@v2
         if: env.PAT
@@ -26,4 +40,4 @@ jobs:
           source_repo: "https://github.com/shineTripodcat/Xiaomi-ax3000t-openwrt.git"
           source_branch: "master"
           destination_branch: "openwrt"
-          github_token: ${{ secrets.PAT || github.event.client_payload.PAT }}
+          github_token: ${{ secrets.PAT || github.event.client_payload.PAT }}    
