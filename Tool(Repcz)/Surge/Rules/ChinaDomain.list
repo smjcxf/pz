@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 779
+# 规则统计: 787
 
 DOMAIN,acg.tv
 DOMAIN,assets1.xboxlive.cn
@@ -131,6 +131,7 @@ DOMAIN-SUFFIX,assets.msn.cn
 DOMAIN-SUFFIX,authing.cn
 DOMAIN-SUFFIX,authing.co
 DOMAIN-SUFFIX,autonavi.com
+DOMAIN-SUFFIX,awtmt.com
 DOMAIN-SUFFIX,baidu.cn
 DOMAIN-SUFFIX,baidu.com
 DOMAIN-SUFFIX,baidubce.com
@@ -300,6 +301,7 @@ DOMAIN-SUFFIX,edge-byted.com
 DOMAIN-SUFFIX,edu.cn
 DOMAIN-SUFFIX,ele.me
 DOMAIN-SUFFIX,elemecdn.com
+DOMAIN-SUFFIX,elseviercdn.cn
 DOMAIN-SUFFIX,email.cn
 DOMAIN-SUFFIX,etao.com
 DOMAIN-SUFFIX,eudic.net
@@ -341,6 +343,7 @@ DOMAIN-SUFFIX,gotokeep.com
 DOMAIN-SUFFIX,gov.cn
 DOMAIN-SUFFIX,gtimg.cn
 DOMAIN-SUFFIX,gtimg.com
+DOMAIN-SUFFIX,guancha.cn
 DOMAIN-SUFFIX,guoguo-app.com
 DOMAIN-SUFFIX,h2os.com
 DOMAIN-SUFFIX,hao123.com
@@ -686,6 +689,8 @@ DOMAIN-SUFFIX,unionpay.com
 DOMAIN-SUFFIX,upaiyun.com
 DOMAIN-SUFFIX,upyun.com
 DOMAIN-SUFFIX,v-56.com
+DOMAIN-SUFFIX,variflight.com
+DOMAIN-SUFFIX,veryzhun.com
 DOMAIN-SUFFIX,vip.com
 DOMAIN-SUFFIX,vivo.com
 DOMAIN-SUFFIX,vmall.com
@@ -693,6 +698,7 @@ DOMAIN-SUFFIX,vmallres.com
 DOMAIN-SUFFIX,volccdn.com
 DOMAIN-SUFFIX,volces.com
 DOMAIN-SUFFIX,volcvideo.com
+DOMAIN-SUFFIX,wallstreetcn.com
 DOMAIN-SUFFIX,wandoujia.com
 DOMAIN-SUFFIX,wangsu.com
 DOMAIN-SUFFIX,weathercn.com
@@ -714,6 +720,7 @@ DOMAIN-SUFFIX,wo.cn
 DOMAIN-SUFFIX,wps.cn
 DOMAIN-SUFFIX,wpscdn.cn
 DOMAIN-SUFFIX,wpscdn.com
+DOMAIN-SUFFIX,wscn.net
 DOMAIN-SUFFIX,x3322.net
 DOMAIN-SUFFIX,xhscdn.com
 DOMAIN-SUFFIX,xiachufang.com
@@ -742,6 +749,7 @@ DOMAIN-SUFFIX,xycloud.com
 DOMAIN-SUFFIX,yangkeduo.com
 DOMAIN-SUFFIX,ydstatic.com
 DOMAIN-SUFFIX,yeah.net
+DOMAIN-SUFFIX,yicai.com
 DOMAIN-SUFFIX,yinxiang.com
 DOMAIN-SUFFIX,yitao.com
 DOMAIN-SUFFIX,ykimg.com

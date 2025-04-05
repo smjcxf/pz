@@ -66,9 +66,59 @@ resource_parser_url= https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/mast
 
 > 小帽语：日常更新如**节点订阅更新**、**去广告分流更新**、**去广告重写更新**将不推送更新提示及更新日志，请自行QX软件内开启对应资源的默认更新即可自动获取，最新更新时间以首页或对应资源内说明文字或本页的更新时间为准。
 >
-> 本仓自3.0版本后 于2022年12月1日起 已持续更新 ***861*** 次
+> 本仓自3.0版本后 于2022年12月1日起 已持续更新 ***867*** 次
 >
-> ***最新更新时间 2025.03.10 10:35***
+> ***最新更新时间 2025.03.26 16:41***
+
+
+
++ ##### 20250326
+
+  * > 新增[koco脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoKocoWidgets.js)
+    >
+
+
++ ##### 20250325
+
+  * > 新增[mud脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoMusicDownload.js)
+    >
+    > 新增[mab脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoMagicBook.js)
+    >
+    > 新增[epic脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoEpic.js)
+    >
+    > 新增[ohms脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoOhms.js)
+    >
+    > 新增[lx脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoLaunchX.js)
+    >
+
++ ##### 20250319
+
+  * > 新增[asi脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoAiStampIdentifier.js)
+    >
+    > 新增[bt脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoBoxingTimer.js)
+    >
+    > 新增[fble脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoFindBLE.js)
+    >
+
+
++ ##### 20250317
+
+  * > 新增[fii脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoFishIdentifier.js)
+    >
+    > 新增[ppt脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoPumpingTracker.js)
+    >
+    > 新增[oy脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoOneYear.js)
+    >
+    > 新增[bea脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoBeast.js)
+    >
+
+
++ ##### 20250313
+
+  * > 新增[fok脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoFokus.js)
+    >
+    > 新增[vta脚本](https://raw.githubusercontent.com/xiaomaoJT/QxScript/main/rewrite/boxJS/XiaoMaoVideoToAudio.js)
+    >
 
 + ##### 20250310
 

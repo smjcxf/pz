@@ -1,5 +1,5 @@
 # 规则名称: ChinaDomain
-# 规则统计: 779
+# 规则统计: 787
 
 HOST,acg.tv,ChinaDomain
 HOST,assets1.xboxlive.cn,ChinaDomain
@@ -131,6 +131,7 @@ HOST-SUFFIX,assets.msn.cn,ChinaDomain
 HOST-SUFFIX,authing.cn,ChinaDomain
 HOST-SUFFIX,authing.co,ChinaDomain
 HOST-SUFFIX,autonavi.com,ChinaDomain
+HOST-SUFFIX,awtmt.com,ChinaDomain
 HOST-SUFFIX,baidu.cn,ChinaDomain
 HOST-SUFFIX,baidu.com,ChinaDomain
 HOST-SUFFIX,baidubce.com,ChinaDomain
@@ -300,6 +301,7 @@ HOST-SUFFIX,edge-byted.com,ChinaDomain
 HOST-SUFFIX,edu.cn,ChinaDomain
 HOST-SUFFIX,ele.me,ChinaDomain
 HOST-SUFFIX,elemecdn.com,ChinaDomain
+HOST-SUFFIX,elseviercdn.cn,ChinaDomain
 HOST-SUFFIX,email.cn,ChinaDomain
 HOST-SUFFIX,etao.com,ChinaDomain
 HOST-SUFFIX,eudic.net,ChinaDomain
@@ -341,6 +343,7 @@ HOST-SUFFIX,gotokeep.com,ChinaDomain
 HOST-SUFFIX,gov.cn,ChinaDomain
 HOST-SUFFIX,gtimg.cn,ChinaDomain
 HOST-SUFFIX,gtimg.com,ChinaDomain
+HOST-SUFFIX,guancha.cn,ChinaDomain
 HOST-SUFFIX,guoguo-app.com,ChinaDomain
 HOST-SUFFIX,h2os.com,ChinaDomain
 HOST-SUFFIX,hao123.com,ChinaDomain
@@ -686,6 +689,8 @@ HOST-SUFFIX,unionpay.com,ChinaDomain
 HOST-SUFFIX,upaiyun.com,ChinaDomain
 HOST-SUFFIX,upyun.com,ChinaDomain
 HOST-SUFFIX,v-56.com,ChinaDomain
+HOST-SUFFIX,variflight.com,ChinaDomain
+HOST-SUFFIX,veryzhun.com,ChinaDomain
 HOST-SUFFIX,vip.com,ChinaDomain
 HOST-SUFFIX,vivo.com,ChinaDomain
 HOST-SUFFIX,vmall.com,ChinaDomain
@@ -693,6 +698,7 @@ HOST-SUFFIX,vmallres.com,ChinaDomain
 HOST-SUFFIX,volccdn.com,ChinaDomain
 HOST-SUFFIX,volces.com,ChinaDomain
 HOST-SUFFIX,volcvideo.com,ChinaDomain
+HOST-SUFFIX,wallstreetcn.com,ChinaDomain
 HOST-SUFFIX,wandoujia.com,ChinaDomain
 HOST-SUFFIX,wangsu.com,ChinaDomain
 HOST-SUFFIX,weathercn.com,ChinaDomain
@@ -714,6 +720,7 @@ HOST-SUFFIX,wo.cn,ChinaDomain
 HOST-SUFFIX,wps.cn,ChinaDomain
 HOST-SUFFIX,wpscdn.cn,ChinaDomain
 HOST-SUFFIX,wpscdn.com,ChinaDomain
+HOST-SUFFIX,wscn.net,ChinaDomain
 HOST-SUFFIX,x3322.net,ChinaDomain
 HOST-SUFFIX,xhscdn.com,ChinaDomain
 HOST-SUFFIX,xiachufang.com,ChinaDomain
@@ -742,6 +749,7 @@ HOST-SUFFIX,xycloud.com,ChinaDomain
 HOST-SUFFIX,yangkeduo.com,ChinaDomain
 HOST-SUFFIX,ydstatic.com,ChinaDomain
 HOST-SUFFIX,yeah.net,ChinaDomain
+HOST-SUFFIX,yicai.com,ChinaDomain
 HOST-SUFFIX,yinxiang.com,ChinaDomain
 HOST-SUFFIX,yitao.com,ChinaDomain
 HOST-SUFFIX,ykimg.com,ChinaDomain

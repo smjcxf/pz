@@ -20,30 +20,13 @@
 
 */
 
-/* eslint-disable indent */
-
 // ruleset: annoyances-cookies
 
 // Important!
 // Isolate from global scope
 
 // Start of local scope
-(( ) => {
-
-/******************************************************************************/
-
-// Start of code to inject
-const uBOL_setLocalStorageItem = function() {
-
-const scriptletGlobals = {}; // eslint-disable-line
-
-const argsList = [["psh:cookies-other","false"],["psh:cookies-seen","true"],["psh:cookies-social","true"],["cookie_consent","no"],["cookieConsent","false"],["zglobal_Acookie_optOut","3"],["cookie","true"],["cookiePolicy","true"],["cookies_view","true"],["gdprConsent","false"],["framerCookiesDismissed","true"],["cookie_accepted","true"],["cookies-consent-accepted","true"],["user-cookies-setting","1"],["COOKIE_AUTHORITY_QUERY_V2","1"],["ignore_cookie_warn","true"],["CerezUyariGosterildi","true"],["cookies-product","NO"],["showCookies","NO"],["localConsent","true"],["acceptedCookies","true"],["isNotificationDisplayed","true"],["COOKIE_BANNER_CLICKED","true"],["cookies-eu-statistics","false"],["cookies-eu-necessary","true"],["cookieStatus","rejected"],["consent","true"],["cookiePreference","required"],["technikmuseum-required-enabled","true"],["ctu-cm-n","1"],["ctu-cm-a","0"],["ctu-cm-m","0"],["cookieAndRecommendsAgreement","true"],["cookiebanner-active","false"],["tracking-state-v2","deny"],["cookieConsent","true"],["consent","[]"],["cookiebanner:extMedia","false"],["cookiebanner:statistic","false"],["cookiesAccepted","true"],["consentAccepted","true"],["marketingConsentAccepted","false"],["consentMode","1"],["uninavIsAgreeCookie","true"],["cookieConsent","denied"],["cookieChoice","rejected"],["adsAccepted","false"],["analyticsAccepted","false"],["analytics_gdpr_accept","yes"],["youtube_gdpr_accept","yes"],["Analytics:accepted","false"],["GDPR:accepted","true"],["cookie_usage_acknowledged_2","1"],["a_c","true"],["iag-targeting-consent","no"],["iag-performance-consent","no"],["userDeniedCookies","1"],["hasConsent","false"],["viewedCookieConsent","true"],["dnt_message_shown","1"],["necessaryConsent","true"],["marketingConsent","false"],["personalisationConsent","false"],["open_modal_update_policy","1"],["cookieinfo","1"],["cookies","1"],["cookieAccepted","true"],["necessary_cookie_confirmed","true"],["ccb_contao_token_1","1"],["cookies","0"],["cookies_accepted_6pzworitz8","true"],["rgpd.consent","1"],["_lukCookieAgree","2"],["cookiesAllowed","false"],["cookiePreference","1"],["artisan_acceptCookie","true"],["cookies_policy_acceptance","denied"],["SAFE__analyticsPreference","false"],["termsOfUseAccepted","true"],["agreeCookie","true"],["lgpd-agree","1"],["cookieIsAccepted","true"],["cookieAllowed","false"],["cookie_usage_accepted","1"],["cookieBannerShown","true"],["cookiesConsent","1"],["cookie_acceptance","true"],["analytics_cookies_acceptance","true"],["ns_cookies","1"],["gdpr","deny"],["c","false"],["cookies-preference","1"],["cookiesAcknowledged","1"],["hasConsentedPH","no"],["cookie_consent","accepted"],["gtag.consent.option","1"],["cps20","1"],["showCookieUse","false"],["terms","accepted"],["z_cookie_consent","true"],["StorageMartCookiesPolicySeen","true"],["bunq:CookieConsentStore:isBannerVisible","false"],["accepted-cookies","[]"],["ngx-webstorage|cookies","false"],["app_gdpr_consent","1"],["alreadyAcceptCookie","true"],["isCookiesAccepted","true"],["cookies","no"],["cookies-policy-accepted","true"],["cookie_prompt_times","1"],["last_prompt_time","1"],["sup_gdpr_cookie","accepted"],["gdpr_cookie","accepted"],["cn","true"],["consent_popup","1"],["COOKIE_CONSENT","false"],["cookie-consent-declined-version","1"],["Do-not-share","true"],["allow-cookies","false"],["__ph_opt_in_out_phc_9aSDbJCaDUMdZdHxxMPTvcj7A9fsl3mCgM1RBPmPsl7","0"],["should_display_cookie_banner_v2","false"],["zora-discover-14-03-23","false"],["connect-wallet-legal-consent","true"],["cookiesMin","1"],["cb-accept-cookie","true"],["cookie-permission","false"],["cookies","true"],["ROCUMENTS.cookieConsent","true"],["bcCookieAccepted","true"],["CMP:personalisation","1"],["pcClosedOnce","true"],["textshuttle_cookie","false"],["cookies-notification-message-is-hidden","true"],["cookieBanner","false"],["cookieBanner","true"],["banner","true"],["isAllowCookies","true"],["gtag_enabled","1"],["cvcConsentGiven","true"],["terms","true"],["cookie_accept","true"],["Pechinchou:CookiesModal","true"],["hub-cp","true"],["cookiePolicyAccepted","yes"],["cookie_usage_acknowledged_2","true"],["cookies_necessary_consent","true"],["cookies_marketing_consent","false"],["cookies_statistics_consent","false"],["wu.ccpa-toast-viewed","true"],["closed","true"],["dnt","1"],["dnt_a","1"],["makerz_allow_consentmgr","0"],["SHOW_COOKIE_BANNER","no"],["CookiesConsent","1"],["hasAnalyticalCookies","false"],["hasStrictlyNecessaryCookies","true"],["amCookieBarFirstShow","1"],["acceptedCookies","false"],["viewedCookieBanner","true"],["accept_all_cookies","false"],["isCookies","1"],["isCookie","Yes"],["cookieconsent_status","false"],["user_cookie","1"],["ka:4:legal-updates","true"],["cok","true"],["cookieMessage","true"],["soCookiesPolicy","1"],["GDPR:RBI:accepted","false"],["contao-privacy-center.hidden","1"],["cookie_consent","false"],["cookiesAgree","true"],["ytsc_accepted_cookies","true"],["safe-storage/v1/tracking-consent/trackingConsentMarketingKey","false"],["safe-storage/v1/tracking-consent/trackingConsentAdvertisingKey","false"],["safe-storage/v1/tracking-consent/trackingConsentAnalyticsKey","false"],["agreeToCookie","false"],["AI Alliance_ReactCookieAcceptance_hasSetCookies","true"],["cookie-ack-2","true"],["firstVisit","false"],["2020-04-05","1"],["dismissed","true"],["SET_COOKIES_APPROVED","true"],["hasAcceptedCookies","true"],["isCookiesNotificationHidden","true"],["agreed-cookies","true"],["consentCookie","true"],["SWCOOKIESACC","1"],["hasAcceptedCookieNotice","true"],["fb-cookies-accepted","false"],["is_accept_cookie","true"],["accept-jove-cookie","1"],["cookie_consent_bar_value","true"],["pxdn_cookie_consent","true"],["akasha__cookiePolicy","true"],["QMOptIn","false"],["safe.global","false"],["cookie_banner:hidden","true"],["cookiesAccepted","false"],["accept_cookie_policy","true"],["201805-policy|accepted","1"],["kick_cookie_accepted","true"],["cookies-selected","true"],["cookie-notice-dismissed","true"],["accepts-cookie-notice","true"],["dismissedPrivacyCookieMessage","1"],["allowCookies","allowed"],["cookie_consent","true"],["cookies_policy_status","true"],["cookies-accepted","true"],["allowCookies","true"],["cookie_consent","1"],["accepted-cookies","true"],["cookies-consent","0"],["cookieBannerRead","true"],["acceptCookie","0"],["cookieBannerReadDate","1"],["privacy-policy-accepted","true"],["accepted_cookies","true"],["accepted_cookie","true"],["cookie-consent","true"],["consentManager_shown","true"],["consent_necessary","true"],["consent_performance","false"],["cookie-closed","true"],["cookie-accepted","false"],["cookieConsent","1"],["enableCookieBanner","false"],["cookie-consent-level","1"],["byFoodCookiePolicyRequire","false"],["ascookie--decision","true"],["isAcceptCookiesNew","true"],["isAcceptCookie","true"],["marketing","false"],["technical","true","","reload","1"],["analytics","false"],["otherCookie","true"],["saveCookie","true"],["userAcceptsCookies","1"],["grnk-cookies-accepted","true"],["acceptCookies","no"],["acceptCookies","true"],["has-dismissed","1"],["hasAcceptedGdpr","true"],["lw-accepts-cookies","true"],["cookies-accept","true"],["load-scripts-v2","2"],["acceptsAnalyticsCookies","false"],["acceptsNecessaryCookies","true"],["display_cookie_modal","false"],["pg-accept-cookies","true"],["__EOBUWIE__consents_accepted","true","","reload","1"],["canada-cookie-acknowledge","1"],["FP_cookiesAccepted","true"],["VISITED_0","true"],["OPTIONAL_COOKIES_ACCEPTED_0","true"],["storagePermission","true"],["set_cookie_stat","false"],["set_cookie_tracking","false"],["df-cookies-allowed","true"],["cookie-consent","1"],["cookieConsent","necessary"],["gdpr-done","true"],["isTrackingAllowed","false"],["legalsAccepted","true"],["COOKIE_CONSENT_STATUS_4124","\"dismissed\""],["cookie_accepted","-1"],["consentInteraction","true"]];
-
-const hostnamesMap = new Map([["nhnieuws.nl",[0,1,2]],["omroepbrabant.nl",[0,1,2]],["posthog.com",3],["polar.sh",3],["varusteleka.com",4],["deribit.com",4],["dorkgpt.com",4],["zoho.com",5],["femibion.rs",6],["nove.fr",6],["popcornmovies.to",7],["improvethenews.org",7],["plente.com",7],["villagrancanaria.com",8],["baic.cz",9],["bunq.com",10],["framer.com",10],["zave.it",10],["tower.dev",10],["ctol.digital",11],["duty.travel.cl",12],["solscan.io",13],["connorduffy.abundancerei.com",14],["bc.gamem",15],["akkushop-turkiye.com.tr",16],["k33.com",[17,18]],["komdigi.go.id",19],["fijiairways.com",20],["planner.kaboodle.co.nz",21],["sekisuialveo.com",[23,24]],["rightsize.dk",25],["random-group.olafneumann.org",26],["espadrij.com",27],["hygiene-shop.eu",27],["gesundheitsmanufaktur.de",[27,260]],["technikmuseum.berlin",28],["cvut.cz",[29,30,31]],["r-ulybka.ru",32],["voltadol.at",33],["evium.de",34],["gpuscout.nl",35],["comnet.com.tr",35],["auth.hiring.amazon.com",35],["parrotsec.org",35],["engeldirekt.de",36],["haleon-gebro.at",[37,38]],["spectrumtherapeutics.com",39],["puregoldprotein.com",[39,46,47]],["thingtesting.com",39],["streamclipsgermany.de",39],["bo3.gg",39],["happyplates.com",[40,41]],["ickonic.com",42],["abs-cbn.com",43],["news.abs-cbn.com",43],["opmaatzagen.nl",44],["mundwerk-rottweil.de",44],["sqlook.com",45],["adef-emploi.fr",[48,49]],["lumieresdelaville.net",[48,49]],["ccaf.io",[50,51]],["dbschenkerarkas.com.tr",52],["dbschenker-seino.jp",52],["dbschenker.com",[52,144]],["scinapse.io",53],["shop.ba.com",[54,55]],["uc.pt",56],["bennettrogers.mysight.uk",57],["snipp.gg",57],["leafly.com",58],["geizhals.at",59],["geizhals.de",59],["geizhals.eu",59],["cenowarka.pl",59],["skinflint.co.uk",59],["webhallen.com",[60,61,62]],["olx.com.br",63],["unobike.com",64],["mod.io",65],["rodrigue-app.ct.ws",66],["passport-photo.online",66],["mojmaxtv.hrvatskitelekom.hr",66],["tme.eu",67],["mein-osttirol.rocks",68],["tennessine.co.uk",69],["ultraleds.co.uk",70],["greubelforsey.com",71],["lukify.app",72],["studiobookr.com",73],["getgrass.io",74],["artisan.co",75],["mobilefuse.com",76],["safe.global",[77,197]],["data.carbonmapper.org",78],["avica.link",79],["madeiramadeira.com.br",80],["sberdisk.ru",81],["column.com",82],["iqoption.com",83],["dopesnow.com",84],["montecwear.com",84],["romeo.com",85],["sonyliv.com",[86,87]],["cwallet.com",88],["oneskin.co",89],["telemetr.io",90],["near.org",91],["near.ai",91],["dev.near.org",92],["jito.network",93],["jito.wtf",93],["goodpods.com",94],["pngtree.com",[95,96]],["v2.xmeye.net",97],["venom.foundation",98],["canonvannederland.nl",99],["my-account.storage-mart.com",100],["web.bunq.com",101],["lifesum.com",102],["home.shortcutssoftware.com",103],["klimwinkel.nl",104],["markimicrowave.com",105],["aerolineas.com.ar",106],["5sim.net",106],["fold.dev",107],["mojposao.hr",108],["temu.com",[109,110]],["supreme.com",[111,112]],["g-star.com",113],["sawren.pl",114],["ultrahuman.com",115],["optionsgroup.com",116],["withpersona.com",[117,118]],["trigger.dev",119],["core.app",[120,122]],["zora.co",121],["kokku-online.de",123],["cuba-buddy.de",124],["datamask.app",125],["humandataincome.com",125],["crealitycloud.com",126],["triumphtechnicalinformation.com",127],["businessclass.com",128],["livsstil.se",129],["schneidewind-immobilien.de",130],["textshuttle.com",131],["simpleswap.io",132],["wales.nhs.attendanywhere.com",133],["sacal.it",134],["astondevs.ru",135],["gonxt.com",136],["geomiq.com",137],["bbc.com",138],["galaxy.com",139],["ticketmelon.com",140],["pechinchou.com.br",141],["thehub21.com",142],["archiup.com",143],["autoride.cz",[145,146,147]],["autoride.es",[145,146,147]],["autoride.io",[145,146,147]],["autoride.sk",[145,146,147]],["wunderground.com",148],["baselime.io",149],["eversports.de",[150,151]],["makerz.me",152],["reebok.eu",153],["alfa.com.ec",154],["rts.com.ec",154],["tropicalida.com.ec",154],["owgr.com",[155,156]],["beermerchants.com",157],["saamexe.com",[158,159]],["helium.com",158],["app.bionic-reading.com",160],["nloto.ru",161],["swisstours.com",162],["librinova.com",163],["format.bike",164],["khanacademy.org",165],["etelecinema.hu",166],["konicaminolta.com",167],["soquest.xyz",168],["region-bayreuth.de",169],["nationalexpress.de",170],["eezy.nrw",170],["bahnland-bayern.de",170],["chipcitycookies.com",171],["6amgroup.com",171],["go.bkk.hu",171],["worldlibertyfinancial.com",171],["happiful.com",171],["bazaartracker.com",172],["subscribercounter.com",173],["app.klarna.com",[174,175,176]],["instantspoursoi.fr",177],["thealliance.ai",178],["vivenu.com",179],["librumreader.com",180],["visnos.com",181],["polypane.app",182],["changelly.com",183],["glose.com",184],["yellow.systems",185],["renebieder.com",186],["goodram.com",187],["starwalk.space",188],["vitotechnology.com",188],["codedead.com",189],["studiofabiobiesel.com",190],["fydeos.com",191],["fydeos.io",191],["jove.com",192],["argent.xyz",193],["pixeden.com",194],["akasha.org",195],["ashleyfurniture.com",196],["jibjab.com",198],["filmzie.com",199],["vietjetair.com",200],["engineering.mixpanel.com",201],["betterprogramming.pub",201],["medium.com",201],["500ish.com",201],["gitconnected.com",201],["bettermarketing.pub",201],["diylifetech.com",201],["thebolditalic.com",201],["writingcooperative.com",201],["fanfare.pub",201],["betterhumans.pub",201],["kick.com",202],["jimdosite.com",203],["worstbassist.com",203],["cora-broodjes.nl",203],["evernote.com",[204,205]],["octopusenergy.co.jp",206],["findmcserver.com",207],["schneideranwaelte.de",208],["traefik.io",208],["cityfalcon.ai",209],["digitalparking.city",210],["mediathekviewweb.de",211],["solana.com",212],["ef.co.id",213],["alohafromdeer.com",214],["fwd.com",[215,217]],["everywhere.game",216],["geotastic.net",218],["tattoodo.com",[219,220]],["garageproject.co.nz",219],["jmonline.com.br",221],["atlas.workland.com",221],["virginexperiencedays.co.uk",221],["emag.berliner-woche.de",[222,223,224]],["nordkurier.de",[222,223,224]],["everest-24.pl",[225,226]],["sneakerfreaker.com",227],["cryptofalka.hu",227],["walmart.ca",228],["flyingblue.com",229],["byfood.com",230],["andsafe.de",231],["edostavka.by",232],["emall.by",232],["ishoppurium.com",233],["onexstore.pl",[234,235,236]],["revanced.app",236],["evropochta.by",[237,238]],["inselberlin.de",239],["gronkh.tv",240],["adfilteringdevsummit.com",241],["dailyrevs.com",242],["dsworks.ru",242],["daraz.com",243],["learngerman.dw.com",244],["leeway.tech",245],["gostanford.com",246],["namensetiketten.de",247],["drafthound.com",[248,249]],["wokularach.pl",250],["bidup.amtrak.com",251],["eschuhe.de",252],["zeglins.com",253],["flyingpapers.com",254],["beta.character.ai",[255,256]],["bittimittari.fi",257],["aida64.co.uk",[258,259]],["aida64.com.ua",[258,259]],["aida64.de",[258,259]],["aida64.hu",[258,259]],["aida64.it",[258,259]],["aida64russia.com",[258,259]],["open24.ee",260],["116117.fi",261],["autodude.dk",262],["autodude.fi",262],["autodude.no",262],["autodude.se",262],["valostore.fi",262],["valostore.no",262],["valostore.se",262],["vivantis-shop.at",263],["krasa.cz",263],["auf1.tv",264],["wesendit.com",265],["hatch.co",266],["gdh.digital",267],["ioplus.nl",268]]);
-
-const entitiesMap = new Map([["movies4us",7],["pedalcommander",22],["vivantis",263]]);
-
-const exceptionsMap = new Map([]);
+(function uBOL_setLocalStorageItem() {
 
 /******************************************************************************/
 
@@ -161,10 +144,12 @@ function safeSelf() {
         'Object_defineProperties': Object.defineProperties.bind(Object),
         'Object_fromEntries': Object.fromEntries.bind(Object),
         'Object_getOwnPropertyDescriptor': Object.getOwnPropertyDescriptor.bind(Object),
+        'Object_hasOwn': Object.hasOwn.bind(Object),
         'RegExp': self.RegExp,
         'RegExp_test': self.RegExp.prototype.test,
         'RegExp_exec': self.RegExp.prototype.exec,
         'Request_clone': self.Request.prototype.clone,
+        'String': self.String,
         'String_fromCharCode': String.fromCharCode,
         'String_split': String.prototype.split,
         'XMLHttpRequest': self.XMLHttpRequest,
@@ -332,95 +317,83 @@ function safeSelf() {
 
 /******************************************************************************/
 
-const hnParts = [];
-try {
-    let origin = document.location.origin;
-    if ( origin === 'null' ) {
-        const origins = document.location.ancestorOrigins;
-        for ( let i = 0; i < origins.length; i++ ) {
-            origin = origins[i];
-            if ( origin !== 'null' ) { break; }
-        }
-    }
-    const pos = origin.lastIndexOf('://');
-    if ( pos === -1 ) { return; }
-    hnParts.push(...origin.slice(pos+3).split('.'));
-} catch {
-}
-const hnpartslen = hnParts.length;
-if ( hnpartslen === 0 ) { return; }
+const scriptletGlobals = {}; // eslint-disable-line
+const argsList = [["psh:cookies-other","false"],["psh:cookies-seen","true"],["psh:cookies-social","true"],["pc-cookie-accepted","true"],["pc-cookie-technical-accepted","true"],["allowFunctionalCookies","false"],["cookiesAccepted","true"],["cookieClosed","true"],["cookie_consent","no"],["explicitCookieAccept-24149","true"],["keeper_cookie_consent","true"],["cookie_accepted","true"],["consentLevel","1"],["cookies-val","accepted"],["201805-policy|accepted","1"],["GDPR-fingerprint:accepted","true"],["CPCCookies","true"],["privacyModalSeen","true"],["LGPDconsent","1"],["isCookiePoliceAccepted","1"],["HAS_ACCEPTED_PRIVACY_POLICY","true"],["cookiesAceptadas","true"],["privacy.com.br","accepted"],["supabase-consent-ph","false"],["cookieConsent","essential"],["has-seen-ccpa-notice","true"],["wbx__cookieAccepted","true"],["show_cookies_popup","false"],["modal_cookies","1"],["trainingDataConsent","true"],["cookieConsent","false"],["zglobal_Acookie_optOut","3"],["cookie","true"],["cookiePolicy","true"],["cookies_view","true"],["gdprConsent","false"],["framerCookiesDismissed","true"],["vue-cookie-accept-decline-cookiePanel","accept"],["cookies-consent-accepted","true"],["user-cookies-setting","1"],["COOKIE_AUTHORITY_QUERY_V2","1"],["ignore_cookie_warn","true"],["CerezUyariGosterildi","true"],["cookies-product","NO"],["showCookies","NO"],["localConsent","true"],["acceptedCookies","true"],["isNotificationDisplayed","true"],["COOKIE_BANNER_CLICKED","true"],["cookies-eu-statistics","false"],["cookies-eu-necessary","true"],["cookieStatus","rejected"],["consent","true"],["cookiePreference","required"],["technikmuseum-required-enabled","true"],["ctu-cm-n","1"],["ctu-cm-a","0"],["ctu-cm-m","0"],["cookieAndRecommendsAgreement","true"],["cookiebanner-active","false"],["tracking-state-v2","deny"],["cookieConsent","true"],["202306151200.shown.production","true"],["consent","[]"],["cookiebanner:extMedia","false"],["cookiebanner:statistic","false"],["consentAccepted","true"],["marketingConsentAccepted","false"],["consentMode","1"],["uninavIsAgreeCookie","true"],["cookieConsent","denied"],["cookieChoice","rejected"],["adsAccepted","false"],["analyticsAccepted","false"],["analytics_gdpr_accept","yes"],["youtube_gdpr_accept","yes"],["Analytics:accepted","false"],["GDPR:accepted","true"],["cookie_usage_acknowledged_2","1"],["a_c","true"],["iag-targeting-consent","no"],["iag-performance-consent","no"],["userDeniedCookies","1"],["hasConsent","false"],["viewedCookieConsent","true"],["dnt_message_shown","1"],["necessaryConsent","true"],["marketingConsent","false"],["personalisationConsent","false"],["open_modal_update_policy","1"],["cookieinfo","1"],["cookies","1"],["cookieAccepted","true"],["necessary_cookie_confirmed","true"],["ccb_contao_token_1","1"],["cookies","0"],["cookies_accepted_6pzworitz8","true"],["rgpd.consent","1"],["_lukCookieAgree","2"],["cookiesAllowed","false"],["cookiePreference","1"],["artisan_acceptCookie","true"],["cookies_policy_acceptance","denied"],["SAFE__analyticsPreference","false"],["termsOfUseAccepted","true"],["agreeCookie","true"],["lgpd-agree","1"],["cookieIsAccepted","true"],["cookieAllowed","false"],["cookie_usage_accepted","1"],["cookieBannerShown","true"],["cookiesConsent","1"],["cookie_acceptance","true"],["analytics_cookies_acceptance","true"],["ns_cookies","1"],["gdpr","deny"],["c","false"],["cookies-preference","1"],["cookiesAcknowledged","1"],["hasConsentedPH","no"],["cookie_consent","accepted"],["gtag.consent.option","1"],["cps20","1"],["showCookieUse","false"],["terms","accepted"],["z_cookie_consent","true"],["StorageMartCookiesPolicySeen","true"],["bunq:CookieConsentStore:isBannerVisible","false"],["accepted-cookies","[]"],["ngx-webstorage|cookies","false"],["app_gdpr_consent","1"],["alreadyAcceptCookie","true"],["isCookiesAccepted","true"],["cookies","no"],["cookies-policy-accepted","true"],["cookie_prompt_times","1"],["last_prompt_time","1"],["sup_gdpr_cookie","accepted"],["gdpr_cookie","accepted"],["cn","true"],["consent_popup","1"],["COOKIE_CONSENT","false"],["cookie-consent-declined-version","1"],["Do-not-share","true"],["allow-cookies","false"],["__ph_opt_in_out_phc_9aSDbJCaDUMdZdHxxMPTvcj7A9fsl3mCgM1RBPmPsl7","0"],["should_display_cookie_banner_v2","false"],["zora-discover-14-03-23","false"],["connect-wallet-legal-consent","true"],["cookiesMin","1"],["cb-accept-cookie","true"],["cookie-permission","false"],["cookies","true"],["ROCUMENTS.cookieConsent","true"],["bcCookieAccepted","true"],["CMP:personalisation","1"],["pcClosedOnce","true"],["textshuttle_cookie","false"],["cookies-notification-message-is-hidden","true"],["cookieBanner","false"],["cookieBanner","true"],["banner","true"],["isAllowCookies","true"],["gtag_enabled","1"],["cvcConsentGiven","true"],["terms","true"],["cookie_accept","true"],["Pechinchou:CookiesModal","true"],["hub-cp","true"],["cookiePolicyAccepted","yes"],["cookie_usage_acknowledged_2","true"],["cookies_necessary_consent","true"],["cookies_marketing_consent","false"],["cookies_statistics_consent","false"],["wu.ccpa-toast-viewed","true"],["closed","true"],["dnt","1"],["dnt_a","1"],["makerz_allow_consentmgr","0"],["SHOW_COOKIE_BANNER","no"],["CookiesConsent","1"],["hasAnalyticalCookies","false"],["hasStrictlyNecessaryCookies","true"],["amCookieBarFirstShow","1"],["acceptedCookies","false"],["viewedCookieBanner","true"],["accept_all_cookies","false"],["isCookies","1"],["isCookie","Yes"],["cookieconsent_status","false"],["user_cookie","1"],["ka:4:legal-updates","true"],["cok","true"],["cookieMessage","true"],["soCookiesPolicy","1"],["GDPR:RBI:accepted","false"],["contao-privacy-center.hidden","1"],["cookie_consent","false"],["cookiesAgree","true"],["ytsc_accepted_cookies","true"],["safe-storage/v1/tracking-consent/trackingConsentMarketingKey","false"],["safe-storage/v1/tracking-consent/trackingConsentAdvertisingKey","false"],["safe-storage/v1/tracking-consent/trackingConsentAnalyticsKey","false"],["agreeToCookie","false"],["AI Alliance_ReactCookieAcceptance_hasSetCookies","true"],["cookie-ack-2","true"],["firstVisit","false"],["2020-04-05","1"],["dismissed","true"],["SET_COOKIES_APPROVED","true"],["hasAcceptedCookies","true"],["isCookiesNotificationHidden","true"],["agreed-cookies","true"],["consentCookie","true"],["SWCOOKIESACC","1"],["hasAcceptedCookieNotice","true"],["fb-cookies-accepted","false"],["is_accept_cookie","true"],["accept-jove-cookie","1"],["cookie_consent_bar_value","true"],["pxdn_cookie_consent","true"],["akasha__cookiePolicy","true"],["QMOptIn","false"],["safe.global","false"],["cookie_banner:hidden","true"],["cookiesAccepted","false"],["accept_cookie_policy","true"],["kick_cookie_accepted","true"],["cookies-selected","true"],["cookie-notice-dismissed","true"],["accepts-cookie-notice","true"],["dismissedPrivacyCookieMessage","1"],["allowCookies","allowed"],["cookie_consent","true"],["cookies_policy_status","true"],["cookies-accepted","true"],["allowCookies","true"],["cookie_consent","1"],["accepted-cookies","true"],["cookies-consent","0"],["cookieBannerRead","true"],["acceptCookie","0"],["cookieBannerReadDate","1"],["privacy-policy-accepted","true"],["accepted_cookies","true"],["accepted_cookie","true"],["cookie-consent","true"],["consentManager_shown","true"],["consent_necessary","true"],["consent_performance","false"],["cookie-closed","true"],["cookie-accepted","false"],["cookieConsent","1"],["enableCookieBanner","false"],["byFoodCookiePolicyRequire","false"],["ascookie--decision","true"],["isAcceptCookiesNew","true"],["isAcceptCookie","true"],["marketing","false"],["technical","true","","reload","1"],["analytics","false"],["otherCookie","true"],["saveCookie","true"],["userAcceptsCookies","1"],["grnk-cookies-accepted","true"],["acceptCookies","no"],["acceptCookies","true"],["has-dismissed","1"],["hasAcceptedGdpr","true"],["lw-accepts-cookies","true"],["cookies-accept","true"],["load-scripts-v2","2"],["acceptsAnalyticsCookies","false"],["acceptsNecessaryCookies","true"],["display_cookie_modal","false"],["pg-accept-cookies","true"],["__EOBUWIE__consents_accepted","true","","reload","1"],["canada-cookie-acknowledge","1"],["FP_cookiesAccepted","true"],["VISITED_0","true"],["OPTIONAL_COOKIES_ACCEPTED_0","true"],["storagePermission","true"],["set_cookie_stat","false"],["set_cookie_tracking","false"],["df-cookies-allowed","true"],["cookie-consent","1"],["userConsented","false"],["cookieConsent","necessary"],["gdpr-done","true"],["isTrackingAllowed","false"],["legalsAccepted","true"],["COOKIE_CONSENT_STATUS_4124","\"dismissed\""],["cookie_accepted","-1"],["cookie-policy","approve"],["spaseekers:cookie-decision","accepted"],["consentInteraction","true"],["cookieConsentGiven","1"]];
+const hostnamesMap = new Map([["nhnieuws.nl",[0,1,2]],["omroepbrabant.nl",[0,1,2]],["erlus.com",[3,4]],["gs1.se",[5,6]],["spectrumtherapeutics.com",6],["puregoldprotein.com",[6,72,73]],["thingtesting.com",6],["streamclipsgermany.de",6],["bo3.gg",6],["lemwarm.com",7],["posthog.com",8],["polar.sh",8],["form.fillout.com",9],["keepersecurity.com",10],["esto.eu",11],["ctol.digital",11],["beterbed.nl",12],["crt.hr",13],["code.likeagirl.io",14],["engineering.mixpanel.com",14],["betterprogramming.pub",14],["medium.com",14],["500ish.com",14],["gitconnected.com",14],["bettermarketing.pub",14],["diylifetech.com",14],["thebolditalic.com",14],["writingcooperative.com",14],["fanfare.pub",14],["betterhumans.pub",14],["fvd.nl",15],["cpc2r.ch",16],["metamask.io",17],["chavesnamao.com.br",18],["anhanguera.com",19],["bhaskar.com",20],["novaventa.com",21],["privacy.com.br",22],["supabase.com",23],["app.getgrass.io",24],["sanluisgarbage.com",25],["wildberries.ru",26],["cryptorank.io",27],["springmerchant.com",28],["veed.io",29],["varusteleka.com",30],["deribit.com",30],["dorkgpt.com",30],["zoho.com",31],["femibion.rs",32],["nove.fr",32],["movies4us.*",33],["popcornmovies.to",33],["improvethenews.org",33],["plente.com",33],["villagrancanaria.com",34],["baic.cz",35],["bunq.com",36],["framer.com",36],["inceptionlabs.ai",36],["zave.it",36],["tower.dev",36],["fleksberegner.dk",37],["duty.travel.cl",38],["solscan.io",39],["connorduffy.abundancerei.com",40],["bc.gamem",41],["akkushop-turkiye.com.tr",42],["k33.com",[43,44]],["komdigi.go.id",45],["fijiairways.com",46],["planner.kaboodle.co.nz",47],["pedalcommander.*",48],["sekisuialveo.com",[49,50]],["rightsize.dk",51],["random-group.olafneumann.org",52],["espadrij.com",53],["hygiene-shop.eu",53],["gesundheitsmanufaktur.de",[53,284]],["technikmuseum.berlin",54],["cvut.cz",[55,56,57]],["r-ulybka.ru",58],["voltadol.at",59],["evium.de",60],["gpuscout.nl",61],["remanga.org",61],["comnet.com.tr",61],["auth.hiring.amazon.com",61],["parrotsec.org",61],["shonenjumpplus.com",62],["engeldirekt.de",63],["haleon-gebro.at",[64,65]],["happyplates.com",[66,67]],["ickonic.com",68],["abs-cbn.com",69],["news.abs-cbn.com",69],["opmaatzagen.nl",70],["mundwerk-rottweil.de",70],["sqlook.com",71],["adef-emploi.fr",[74,75]],["lumieresdelaville.net",[74,75]],["ccaf.io",[76,77]],["dbschenkerarkas.com.tr",78],["dbschenker-seino.jp",78],["dbschenker.com",[78,170]],["scinapse.io",79],["shop.ba.com",[80,81]],["uc.pt",82],["bennettrogers.mysight.uk",83],["snipp.gg",83],["leafly.com",84],["geizhals.at",85],["geizhals.de",85],["geizhals.eu",85],["cenowarka.pl",85],["skinflint.co.uk",85],["webhallen.com",[86,87,88]],["olx.com.br",89],["unobike.com",90],["mod.io",91],["rodrigue-app.ct.ws",92],["passport-photo.online",92],["mojmaxtv.hrvatskitelekom.hr",92],["tme.eu",93],["mein-osttirol.rocks",94],["tennessine.co.uk",95],["ultraleds.co.uk",96],["greubelforsey.com",97],["lukify.app",98],["studiobookr.com",99],["getgrass.io",100],["artisan.co",101],["mobilefuse.com",102],["safe.global",[103,223]],["data.carbonmapper.org",104],["avica.link",105],["madeiramadeira.com.br",106],["sberdisk.ru",107],["column.com",108],["iqoption.com",109],["dopesnow.com",110],["montecwear.com",110],["romeo.com",111],["sonyliv.com",[112,113]],["cwallet.com",114],["oneskin.co",115],["telemetr.io",116],["near.org",117],["near.ai",117],["dev.near.org",118],["jito.network",119],["jito.wtf",119],["goodpods.com",120],["pngtree.com",[121,122]],["v2.xmeye.net",123],["venom.foundation",124],["canonvannederland.nl",125],["my-account.storage-mart.com",126],["web.bunq.com",127],["lifesum.com",128],["home.shortcutssoftware.com",129],["klimwinkel.nl",130],["markimicrowave.com",131],["aerolineas.com.ar",132],["5sim.net",132],["fold.dev",133],["mojposao.hr",134],["temu.com",[135,136]],["supreme.com",[137,138]],["g-star.com",139],["sawren.pl",140],["ultrahuman.com",141],["optionsgroup.com",142],["withpersona.com",[143,144]],["trigger.dev",145],["core.app",[146,148]],["zora.co",147],["kokku-online.de",149],["cuba-buddy.de",150],["datamask.app",151],["humandataincome.com",151],["crealitycloud.com",152],["triumphtechnicalinformation.com",153],["businessclass.com",154],["livsstil.se",155],["schneidewind-immobilien.de",156],["textshuttle.com",157],["simpleswap.io",158],["wales.nhs.attendanywhere.com",159],["sacal.it",160],["astondevs.ru",161],["gonxt.com",162],["geomiq.com",163],["bbc.com",164],["galaxy.com",165],["ticketmelon.com",166],["pechinchou.com.br",167],["thehub21.com",168],["archiup.com",169],["autoride.cz",[171,172,173]],["autoride.es",[171,172,173]],["autoride.io",[171,172,173]],["autoride.sk",[171,172,173]],["wunderground.com",174],["baselime.io",175],["eversports.de",[176,177]],["makerz.me",178],["reebok.eu",179],["alfa.com.ec",180],["rts.com.ec",180],["tropicalida.com.ec",180],["owgr.com",[181,182]],["beermerchants.com",183],["saamexe.com",[184,185]],["helium.com",184],["app.bionic-reading.com",186],["nloto.ru",187],["swisstours.com",188],["librinova.com",189],["format.bike",190],["khanacademy.org",191],["etelecinema.hu",192],["konicaminolta.com",193],["soquest.xyz",194],["region-bayreuth.de",195],["nationalexpress.de",196],["eezy.nrw",196],["bahnland-bayern.de",196],["chipcitycookies.com",197],["6amgroup.com",197],["go.bkk.hu",197],["worldlibertyfinancial.com",197],["happiful.com",197],["bazaartracker.com",198],["subscribercounter.com",199],["app.klarna.com",[200,201,202]],["instantspoursoi.fr",203],["thealliance.ai",204],["vivenu.com",205],["librumreader.com",206],["visnos.com",207],["polypane.app",208],["changelly.com",209],["glose.com",210],["yellow.systems",211],["renebieder.com",212],["goodram.com",213],["starwalk.space",214],["vitotechnology.com",214],["codedead.com",215],["studiofabiobiesel.com",216],["fydeos.com",217],["fydeos.io",217],["jove.com",218],["argent.xyz",219],["pixeden.com",220],["akasha.org",221],["ashleyfurniture.com",222],["jibjab.com",224],["filmzie.com",225],["vietjetair.com",226],["kick.com",227],["jimdosite.com",228],["worstbassist.com",228],["cora-broodjes.nl",228],["evernote.com",[229,230]],["octopusenergy.co.jp",231],["findmcserver.com",232],["schneideranwaelte.de",233],["traefik.io",233],["cityfalcon.ai",234],["digitalparking.city",235],["mediathekviewweb.de",236],["solana.com",237],["ef.co.id",238],["alohafromdeer.com",239],["fwd.com",[240,242]],["everywhere.game",241],["geotastic.net",243],["tattoodo.com",[244,245]],["garageproject.co.nz",244],["jmonline.com.br",246],["atlas.workland.com",246],["virginexperiencedays.co.uk",246],["emag.berliner-woche.de",[247,248,249]],["nordkurier.de",[247,248,249]],["everest-24.pl",[250,251]],["sneakerfreaker.com",252],["cryptofalka.hu",252],["walmart.ca",253],["byfood.com",254],["andsafe.de",255],["edostavka.by",256],["emall.by",256],["ishoppurium.com",257],["onexstore.pl",[258,259,260]],["revanced.app",260],["evropochta.by",[261,262]],["inselberlin.de",263],["gronkh.tv",264],["adfilteringdevsummit.com",265],["dailyrevs.com",266],["dsworks.ru",266],["daraz.com",267],["learngerman.dw.com",268],["leeway.tech",269],["gostanford.com",270],["namensetiketten.de",271],["drafthound.com",[272,273]],["wokularach.pl",274],["bidup.amtrak.com",275],["eschuhe.de",276],["zeglins.com",277],["flyingpapers.com",278],["beta.character.ai",[279,280]],["bittimittari.fi",281],["aida64.co.uk",[282,283]],["aida64.com.ua",[282,283]],["aida64.de",[282,283]],["aida64.hu",[282,283]],["aida64.it",[282,283]],["aida64russia.com",[282,283]],["open24.ee",284],["116117.fi",285],["pjspub.com",286],["autodude.dk",287],["autodude.fi",287],["autodude.no",287],["autodude.se",287],["valostore.fi",287],["valostore.no",287],["valostore.se",287],["vivantis.*",288],["vivantis-shop.at",288],["krasa.cz",288],["auf1.tv",289],["wesendit.com",290],["hatch.co",291],["gdh.digital",292],["haberturk.com",293],["spaseekers.com",294],["ioplus.nl",295],["lahella.fi",296]]);
+const exceptionsMap = new Map([]);
+const hasEntities = true;
+const hasAncestors = false;
 
-const todoIndices = new Set();
-const tonotdoIndices = [];
-
-// Exceptions
-if ( exceptionsMap.size !== 0 ) {
-    for ( let i = 0; i < hnpartslen; i++ ) {
-        const hn = hnParts.slice(i).join('.');
-        const excepted = exceptionsMap.get(hn);
-        if ( excepted ) { tonotdoIndices.push(...excepted); }
-    }
-    exceptionsMap.clear();
-}
-
-// Hostname-based
-if ( hostnamesMap.size !== 0 ) {
-    const collectArgIndices = hn => {
-        let argsIndices = hostnamesMap.get(hn);
-        if ( argsIndices === undefined ) { return; }
-        if ( typeof argsIndices === 'number' ) { argsIndices = [ argsIndices ]; }
+const collectArgIndices = (hn, map, out) => {
+    let argsIndices = map.get(hn);
+    if ( argsIndices === undefined ) { return; }
+    if ( typeof argsIndices !== 'number' ) {
         for ( const argsIndex of argsIndices ) {
-            if ( tonotdoIndices.includes(argsIndex) ) { continue; }
-            todoIndices.add(argsIndex);
+            out.add(argsIndex);
         }
-    };
-    for ( let i = 0; i < hnpartslen; i++ ) {
-        const hn = hnParts.slice(i).join('.');
-        collectArgIndices(hn);
+    } else {
+        out.add(argsIndices);
     }
-    collectArgIndices('*');
-    hostnamesMap.clear();
-}
+};
 
-// Entity-based
-if ( entitiesMap.size !== 0 ) {
-    const n = hnpartslen - 1;
-    for ( let i = 0; i < n; i++ ) {
-        for ( let j = n; j > i; j-- ) {
-            const en = hnParts.slice(i,j).join('.');
-            let argsIndices = entitiesMap.get(en);
-            if ( argsIndices === undefined ) { continue; }
-            if ( typeof argsIndices === 'number' ) { argsIndices = [ argsIndices ]; }
-            for ( const argsIndex of argsIndices ) {
-                if ( tonotdoIndices.includes(argsIndex) ) { continue; }
-                todoIndices.add(argsIndex);
+const indicesFromHostname = (hostname, suffix = '') => {
+    const hnParts = hostname.split('.');
+    const hnpartslen = hnParts.length;
+    if ( hnpartslen === 0 ) { return; }
+    for ( let i = 0; i < hnpartslen; i++ ) {
+        const hn = `${hnParts.slice(i).join('.')}${suffix}`;
+        collectArgIndices(hn, hostnamesMap, todoIndices);
+        collectArgIndices(hn, exceptionsMap, tonotdoIndices);
+    }
+    if ( hasEntities ) {
+        const n = hnpartslen - 1;
+        for ( let i = 0; i < n; i++ ) {
+            for ( let j = n; j > i; j-- ) {
+                const en = `${hnParts.slice(i,j).join('.')}.*${suffix}`;
+                collectArgIndices(en, hostnamesMap, todoIndices);
+                collectArgIndices(en, exceptionsMap, tonotdoIndices);
             }
         }
     }
-    entitiesMap.clear();
+};
+
+const entries = (( ) => {
+    const docloc = document.location;
+    const origins = [ docloc.origin ];
+    if ( docloc.ancestorOrigins ) {
+        origins.push(...docloc.ancestorOrigins);
+    }
+    return origins.map((origin, i) => {
+        const beg = origin.lastIndexOf('://');
+        if ( beg === -1 ) { return; }
+        const hn = origin.slice(beg+3)
+        const end = hn.indexOf(':');
+        return { hn: end === -1 ? hn : hn.slice(0, end), i };
+    }).filter(a => a !== undefined);
+})();
+if ( entries.length === 0 ) { return; }
+
+const todoIndices = new Set();
+const tonotdoIndices = new Set();
+
+indicesFromHostname(entries[0].hn);
+if ( hasAncestors ) {
+    for ( const entry of entries ) {
+        if ( entry.i === 0 ) { continue; }
+        indicesFromHostname(entry.hn, '>>');
+    }
 }
 
 // Apply scriplets
 for ( const i of todoIndices ) {
+    if ( tonotdoIndices.has(i) ) { continue; }
     try { setLocalStorageItem(...argsList[i]); }
     catch { }
 }
-argsList.length = 0;
-
-/******************************************************************************/
-
-};
-// End of code to inject
-
-/******************************************************************************/
-
-uBOL_setLocalStorageItem();
 
 /******************************************************************************/
 
 // End of local scope
 })();
-
-/******************************************************************************/
 
 void 0;

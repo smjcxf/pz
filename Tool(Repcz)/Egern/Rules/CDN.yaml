@@ -1,5 +1,5 @@
 # 规则名称: CDN
-# 规则统计: 3288
+# 规则统计: 3397
 
 domain_set:
   - 0x0.st
@@ -9,6 +9,7 @@ domain_set:
   - a.fireside.fm
   - a.gawby.com
   - a.kickstarter.com
+  - a.klaviyo.com
   - a5.behance.net
   - a57.foxnews.com
   - academy-public.coinmarketcap.com
@@ -24,6 +25,7 @@ domain_set:
   - ajax.googleapis.com
   - ajax.microsoft.com
   - ak.sail-horizon.com
+  - akamai-assets.squarespace.com
   - alt.idgesg.net
   - amp.azure.net
   - analytics.twitter.com
@@ -117,6 +119,7 @@ domain_set:
   - assets.clever-cloud.com
   - assets.clickfunnels.com
   - assets.cloudpilot.ai
+  - assets.cmcmarkets.com
   - assets.codepen.io
   - assets.coinbase.com
   - assets.coingecko.com
@@ -143,9 +146,11 @@ domain_set:
   - assets.frontegg.com
   - assets.garr.it
   - assets.gcore.pro
+  - assets.geeksforgeeks.org
   - assets.genius.com
   - assets.getkirby.com
   - assets.github.dev
+  - assets.goat.com
   - assets.grammarly.com
   - assets.grooveapps.com
   - assets.guim.co.uk
@@ -184,6 +189,7 @@ domain_set:
   - assets.orz.uno
   - assets.peatio.com
   - assets.pixlee.com
+  - assets.play.xbox.com
   - assets.plurk.com
   - assets.poool.fr
   - assets.positional-bucket.com
@@ -208,6 +214,7 @@ domain_set:
   - assets.swoogo.com
   - assets.the-independent.com
   - assets.time.com
+  - assets.toiimg.com
   - assets.tokopedia.net
   - assets.toot.cafe
   - assets.twitch.tv
@@ -244,7 +251,6 @@ domain_set:
   - assetscdn-wchat.eu.freshchat.com
   - assetscdn.jable.tv
   - at.cbsi.com
-  - atn.hitomi.la
   - attachments.office.net
   - auth.split.io
   - avatar.freepik.com
@@ -261,6 +267,7 @@ domain_set:
   - az700632.vo.msecnd.net
   - b.peatio.com
   - b.sf-syn.com
+  - b5x-sentry.1passwordservices.com
   - badbits.dwebops.pub
   - badge.buildkite.com
   - badge.fury.io
@@ -279,7 +286,7 @@ domain_set:
   - brick.a.ssl.fastly.net
   - brick.freetls.fastly.net
   - bst.icons8.com
-  - btn.hitomi.la
+  - bucket1.notaku.so
   - bundle.dyn-rev.app
   - bundle.trysavvy.com
   - bundlephobia.com
@@ -312,11 +319,13 @@ domain_set:
   - cache-05.filehippo.net
   - cache.armorgames.com
   - cache.hackedfreegames.com
+  - cassette.sphdigital.com.sg
   - cc.boyfriendtv.com
   - cdn-1.ggjav.com
   - cdn-a.sonyentertainmentnetwork.com
   - cdn-app.pathfactory.com
   - cdn-assets.circleci.com
+  - cdn-avatars.huggingface.co
   - cdn-bundler.nice-team.net
   - cdn-c.leavemealone.com
   - cdn-client.medium.com
@@ -348,8 +357,10 @@ domain_set:
   - cdn-uicons.flaticon.com
   - cdn-web.fydeos.io
   - cdn-web.orbstack.dev
+  - cdn-widgetsrepository.yotpo.com
   - cdn-www.bluestacks.com
   - cdn-yotpo-images-production.yotpo.com
+  - cdn.123av.me
   - cdn.17app.co
   - cdn.18jav.tv
   - cdn.7tv.app
@@ -361,6 +372,7 @@ domain_set:
   - cdn.announcekit.app
   - cdn.answeroverflow.com
   - cdn.apkmonk.com
+  - cdn.app.fossa.com
   - cdn.app.neononepay.com
   - cdn.apponic.com
   - cdn.arcade.software
@@ -387,6 +399,7 @@ domain_set:
   - cdn.c1.amplience.net
   - cdn.calibermind.com
   - cdn.cameo.com
+  - cdn.camweara.com
   - cdn.cbd.int
   - cdn.changelog.com
   - cdn.channel.io
@@ -395,6 +408,7 @@ domain_set:
   - cdn.clever-cloud.com
   - cdn.cliqz.com
   - cdn.cloudcraft.co
+  - cdn.cmcmarkets.com
   - cdn.cms-twdigitalassets.com
   - cdn.cnn.com
   - cdn.cnx-software.com
@@ -424,12 +438,15 @@ domain_set:
   - cdn.deta.space
   - cdn.devolutions.net
   - cdn.dnsimple.com
+  - cdn.docsbot.com
   - cdn.document360.io
   - cdn.donmai.us
   - cdn.dotaoutpost.com
   - cdn.download.it
+  - cdn.drata.com
   - cdn.dribbble.com
   - cdn.dynamicyield.com
+  - cdn.earthroulette.com
   - cdn.ecomm.ui.com
   - cdn.embed.ly
   - cdn.embedly.com
@@ -451,6 +468,7 @@ domain_set:
   - cdn.freecodecamp.org
   - cdn.freshdesk.com
   - cdn.gamemonkey.org
+  - cdn.gatherings.franchise.minecraft-services.net
   - cdn.gdl.gg
   - cdn.geekzone.co.nz
   - cdn.getkoala.com
@@ -461,12 +479,14 @@ domain_set:
   - cdn.glitch.global
   - cdn.glitch.me
   - cdn.gofundme.com
+  - cdn.googlesource.com
   - cdn.graph.office.net
   - cdn.growthbook.io
   - cdn.hackernoon.com
   - cdn.hashnode.com
   - cdn.headwayapp.co
   - cdn.hellofresh.com
+  - cdn.hextom.com
   - cdn.hiive.space
   - cdn.hinative.com
   - cdn.hk01.com
@@ -479,6 +499,7 @@ domain_set:
   - cdn.ionos.de
   - cdn.ip2location.io
   - cdn.ipregistry.co
+  - cdn.javmg.com
   - cdn.javsts.com
   - cdn.jetboost.io
   - cdn.jetphotos.com
@@ -527,6 +548,7 @@ domain_set:
   - cdn.nolt.io
   - cdn.now.gg
   - cdn.nperf.com
+  - cdn.one.store
   - cdn.onesignal.com
   - cdn.onetime.dog
   - cdn.onlyhentaistuff.com
@@ -535,11 +557,14 @@ domain_set:
   - cdn.paddle.com
   - cdn.pagefly.io
   - cdn.pagic.org
+  - cdn.paidy.com
+  - cdn.paritydeals.com
   - cdn.parsely.com
   - cdn.pathfactory.com
   - cdn.pendo.io
   - cdn.perfops.net
   - cdn.permutive.com
+  - cdn.pgvt.io
   - cdn.piano.io
   - cdn.pickystory.com
   - cdn.picrew.me
@@ -569,6 +594,7 @@ domain_set:
   - cdn.redoc.ly
   - cdn.registerdisney.go.com
   - cdn.reimu.net
+  - cdn.report-uri.com
   - cdn.rex.contents.rakuten.co.jp
   - cdn.rive.app
   - cdn.robinpro.gallery
@@ -577,6 +603,7 @@ domain_set:
   - cdn.safecharge.com
   - cdn.sanity.io
   - cdn.sc.gl
+  - cdn.scaleflex.it
   - cdn.schemaapp.com
   - cdn.sciencecast.org
   - cdn.scripts.wtwhmedia.com
@@ -593,6 +620,7 @@ domain_set:
   - cdn.skymavis.com
   - cdn.smooch.io
   - cdn.softswiss.net
+  - cdn.sphlabs.com
   - cdn.split.io
   - cdn.sprig.com
   - cdn.sso.mozilla.com
@@ -622,6 +650,7 @@ domain_set:
   - cdn.unrealengine.com
   - cdn.unwire.hk
   - cdn.up-timely.com
+  - cdn.uptimia.com
   - cdn.usd.fan
   - cdn.userreport.com
   - cdn.v2ex.com
@@ -634,6 +663,7 @@ domain_set:
   - cdn.wccftech.com
   - cdn.webclicks24.com
   - cdn.weglot.com
+  - cdn.wikimg.net
   - cdn.wikiwand.com
   - cdn.wikiwiki.jp
   - cdn.windowsreport.com
@@ -649,6 +679,7 @@ domain_set:
   - cdn.zapier.com
   - cdn.zeabur.com
   - cdn.zhujiwiki.com
+  - cdn.zigpoll.com
   - cdn0-i.techbang.com
   - cdn0.dan.com
   - cdn0.iconfinder.com
@@ -732,6 +763,7 @@ domain_set:
   - cdnstatic.w4nkr.com
   - cdntranscend.eventbrite.com
   - cdnweb.devolutions.net
+  - cdp.sph.com.sg
   - cds.connatix.com
   - certificates.godaddy.com
   - certona.gap.com
@@ -745,6 +777,7 @@ domain_set:
   - cfvod.kaltura.com
   - chart.googleapis.com
   - chat-content.beanfun.com
+  - chat.digitalgenius.com
   - chatwidgetmetrics-proxy.usepylon.com
   - checkout-sdk.bigcommerce.com
   - checkout.stripe.com
@@ -754,6 +787,7 @@ domain_set:
   - clientsdk.launchdarkly.com
   - clientstream.launchdarkly.com
   - clips-media-assets2.twitch.tv
+  - clips.kick.com
   - cloud.redhat.com
   - cloud.typenetwork.com
   - cloudflare.tv
@@ -762,7 +796,10 @@ domain_set:
   - cms-assets.nodecraft.com
   - cms-assets.webediamovies.pro
   - cms-assets.xboxservices.com
+  - cms-cdn.goat.com
   - cms-cdn.now.gg
+  - cms.recordedfuture.com
+  - cms.therecord.media
   - cms.typenetwork.com
   - code.benco.io
   - code.highcharts.com
@@ -775,6 +812,7 @@ domain_set:
   - compass-ssl.xbox.com
   - components.clever-cloud.com
   - components.justanswer.com
+  - components.trynow.net
   - config.extension.grammarly.com
   - connect-js.stripe.com
   - connect.facebook.net
@@ -820,10 +858,12 @@ domain_set:
   - css.createsend1.com
   - curl.se
   - cw-image-resizer.cwg.tw
+  - d2c.aws.amazon.com
   - d4.alternativeto.net
   - dam.freshworks.com
   - dassets.shimano.com
   - data.jsdelivr.com
+  - data.pendo.io
   - data.web.clickup.com
   - david-dm.org
   - db.onlinewebfonts.com
@@ -845,6 +885,7 @@ domain_set:
   - dl.airdroid.com
   - dl.nwjs.io
   - dl2.nwjs.io
+  - dlassets-ssl.xboxlive.com
   - do.featurebase.app
   - docker.cloudsmith.io
   - docs.rs
@@ -854,6 +895,7 @@ domain_set:
   - drop.ndtv.com
   - drscdn.500px.org
   - dynamic-assets.coinbase.com
+  - dz2cdn1.dzone.com
   - e.deviantart.net
   - e.linear.app
   - e3.365dm.com
@@ -863,6 +905,7 @@ domain_set:
   - ecommplugins-scripts.trustpilot.com
   - ecommplugins-trustboxsettings.trustpilot.com
   - edata.ndtv.com
+  - edge-cloud-resource-static.azureedge.net
   - edge-consumer-static.azureedge.net
   - edge-mobile-static.azureedge.net
   - edge.marker.io
@@ -920,6 +963,7 @@ domain_set:
   - f002.backblazeb2.com
   - f003.backblazeb2.com
   - f004.backblazeb2.com
+  - fast.appcues.com
   - fast.wistia.com
   - fast.wistia.net
   - fastly-cloud.typenetwork.com
@@ -936,6 +980,7 @@ domain_set:
   - files.armorgames.com
   - files.buildwithfern.com
   - files.jotform.com
+  - files.kick.com
   - files.mastodon.ktachibana.party
   - files.mastodon.online
   - files.mastodon.social
@@ -949,6 +994,7 @@ domain_set:
   - filestore.community.support.microsoft.com
   - filestore.fortinet.com
   - firebase-settings.crashlytics.com
+  - firebaseinstallations.googleapis.com
   - firebaselogging-pa.googleapis.com
   - firebaselogging.googleapis.com
   - firefox.settings.services.mozilla.com
@@ -980,22 +1026,27 @@ domain_set:
   - gearbox.imgix.com
   - genesis-cdn.ff.com
   - geoip-js.com
+  - geojson.io
   - gfx-data.news-engineering.aws.wapo.pub
   - gitpkg-fork.vercel.sh
   - global.divhunt.com
   - glyph.medium.com
   - gmedia.playstation.com
   - gn-web-assets.api.bbc.com
+  - go.imperva.com
   - go.vercel.com
   - godoc.org
+  - gohugo.io
   - google-ohttp-relay-safebrowsing.fastly-edge.com
   - gopkg.in
   - graph.facebook.com
   - gravatar.cat.net
+  - gstatic.com
   - gt1.onlyhentaistuff.com
   - gtranslate.io
   - hawk.tomsguide.com
   - headway-widget.net
+  - heatmap-external-a.strava.com
   - hentaiworldtv.b-cdn.net
   - hhhhhhome86227170.wordpress.com
   - hips.hearstapps.com
@@ -1046,8 +1097,10 @@ domain_set:
   - icons.leavemealone.com
   - icons.llamao.fi
   - icons.ly
+  - icons.veryicon.com
   - icons.zeabur.com
   - iframe.nbcnews.com
+  - ik.imgkit.net
   - imag.malavida.com
   - image-forwarder.notaku.so
   - image.ap-mail.org
@@ -1057,6 +1110,7 @@ domain_set:
   - image.dooo.ng
   - image.email.microsoftemail.com
   - image.freepik.com
+  - image.goat.com
   - image.gyutto.com
   - image.gyutto.jp
   - image.hkhl.hk
@@ -1086,6 +1140,7 @@ domain_set:
   - images-ext-2.discordapp.net
   - images.991.com
   - images.anandtech.com
+  - images.applegamingwiki.com
   - images.arigatotravel.com
   - images.axios.com
   - images.bfmtv.com
@@ -1095,6 +1150,7 @@ domain_set:
   - images.crunchbase.com
   - images.design-editor.com
   - images.dmca.com
+  - images.drata.com
   - images.ecomm.microsoft.com
   - images.emojiterra.com
   - images.en.aptoide.com
@@ -1105,6 +1161,7 @@ domain_set:
   - images.freeimages.com
   - images.g2crowd.com
   - images.idgesg.net
+  - images.kick.com
   - images.macrumors.com
   - images.mattel.net
   - images.microcms-assets.io
@@ -1258,7 +1315,6 @@ domain_set:
   - info.cloudflare.com
   - info.knak.com
   - int.mwbbiz.com
-  - int.qiniuyun15.xyz
   - integrations.gitbook.com
   - interactive-examples.mdn.mozilla.net
   - interactive.guim.co.uk
@@ -1303,6 +1359,7 @@ domain_set:
   - jslibs.blackmagicdesign.com
   - jsonplaceholder.typicode.com
   - jssdk.opin.media
+  - jssocdn.indiatimes.com
   - k-cdn.depot.dev
   - kdata1.com
   - keyframe-cdn.abcnews.com
@@ -1321,12 +1378,14 @@ domain_set:
   - libraries.hund.io
   - libs.quillbot.com
   - lift-ai-js.marketlinc.com
+  - limitless.cmax.ai
   - link.storjshare.io
   - linkstorage.linkfire.com
   - linuxiac.b-cdn.net
   - listing-thumbnail.live.nicovideo.jp
   - live-storage.fc2.com
   - live.fanmingming.com
+  - live.visually-io.com
   - livedoor.blogimg.jp
   - livemap-tiles1.waze.com
   - load.csell.co
@@ -1336,7 +1395,6 @@ domain_set:
   - logos.kiwibrowser.com
   - logos.speedtestcustom.com
   - loutre.blockchair.io
-  - ltn.hitomi.la
   - lumiere-a.akamaihd.net
   - m-cdn.phonearena.com
   - m.porn3dx.com
@@ -1378,6 +1436,7 @@ domain_set:
   - media.fc2.com
   - media.flaticon.com
   - media.fs.com
+  - media.geeksforgeeks.org
   - media.gettr.com
   - media.gettyimages.com
   - media.giphy.com
@@ -1393,6 +1452,7 @@ domain_set:
   - media.loom-app.com
   - media.mas.to
   - media.masto.nu
+  - media.minecraftforum.net
   - media.mstdn.io
   - media.nationwide.com
   - media.newyorker.com
@@ -1433,9 +1493,11 @@ domain_set:
   - media9.kissjav.com
   - medias.meow.social
   - megapx-assets.dcard.tw
+  - meta.prismlauncher.org
   - metrics.kapa.ai
   - micro.rubiconproject.com
   - minotar.net
+  - mintlify.b-cdn.net
   - mir-s3-cdn-cf.behance.net
   - miro.medium.com
   - mixin-images.zeromesh.net
@@ -1447,6 +1509,7 @@ domain_set:
   - mosaic.fxtwitter.com
   - mparticle.weather.com
   - mstdn-s3.o3o.studio
+  - mta.newfold.com
   - mui.com
   - mwcm.nyt.com
   - mwf-service.akamaized.net
@@ -1460,6 +1523,7 @@ domain_set:
   - net-fe-static-assets.network-controller.svc.ui.com
   - netlify.apollo.io
   - newassets.hcaptcha.com
+  - newfold.scene7.com
   - news-assets.apple.com
   - newsletter.postmarkapp.com
   - next-images.opencollective.com
@@ -1489,7 +1553,6 @@ domain_set:
   - openapi.vercel.sh
   - openseauserdata.com
   - opensignal.cdnbye.com
-  - opt.moovweb.net
   - optimizationguide-pa.googleapis.com
   - optimizely.com
   - organizer.bizzabo.com
@@ -1551,6 +1614,7 @@ domain_set:
   - pl.ea.com
   - platform-assets.typekit.net
   - platform.instagram.com
+  - platform.theverge.com
   - platform.twitter.com
   - platforms.makemytrip.com
   - play.gotolstoy.com
@@ -1669,6 +1733,7 @@ domain_set:
   - s.gishan.cc
   - s.imgflip.com
   - s.imgur.com
+  - s.midishow.net
   - s.namemc.com
   - s.plurk.com
   - s.rfi.fr
@@ -1694,6 +1759,7 @@ domain_set:
   - s3-figma-force-client-reloads-production.figma.com
   - s3-figma-plugin-images-production-sig.figma.com
   - s3-symbol-logo.tradingview.com
+  - s3-zen.mds.yandex.net
   - s3.2233778.xyz
   - s3.aaaaa.io
   - s3.acg.mn
@@ -1735,6 +1801,7 @@ domain_set:
   - sandpack-cdn-v2.codesandbox.io
   - sbl.onfastspring.com
   - scdn.clerk.com
+  - scdn.line-apps.com
   - scontent.whatsapp.net
   - screenshots.codesandbox.io
   - screenshots.debian.net
@@ -1748,6 +1815,7 @@ domain_set:
   - sdk.qikify.com
   - sdk.snapkit.com
   - sdk.split.io
+  - sdks.automizely.com
   - seal-newyork.bbb.org
   - searchanise-ef84.kxcdn.com
   - searchg2-assets.crownpeak.net
@@ -1791,6 +1859,7 @@ domain_set:
   - social-cdn.vivaldi.net
   - solve-widget.forethought.ai
   - source.domaintools.com
+  - sourcemaps.squarespace.net
   - sourcepoint.theguardian.com
   - sp-spiegel-de.spiegel.de
   - sp.nba.com
@@ -1798,6 +1867,7 @@ domain_set:
   - spcdn.incartupsell.com
   - spoprod-a.akamaihd.net
   - sprig.figma.com
+  - ssl.gstatic.com
   - st-eu.dynamicyield.com
   - st.agrd.eu
   - st.deviantart.net
@@ -1853,6 +1923,7 @@ domain_set:
   - static-secure-uploads.ui.com
   - static-sg-cdn.eporner.com
   - static-sv.fc2.com
+  - static-us.afterpay.com
   - static-web-prod.skillshare.com
   - static-web.grammarly.com
   - static-www.onlyoffice.com
@@ -1860,6 +1931,7 @@ domain_set:
   - static.ada.support
   - static.addtoany.com
   - static.adguardvpn.com
+  - static.afterpay.com
   - static.agilebits.com
   - static.ahrefs.com
   - static.aizanmei.org
@@ -1870,11 +1942,13 @@ domain_set:
   - static.bangumi.moe
   - static.bbc.co.uk
   - static.bbci.co.uk
+  - static.beebom.com
   - static.bit.cloud
   - static.bit.dev
   - static.bitfinex.com
   - static.bravoporn.com
   - static.buffer.com
+  - static.buydomains.com
   - static.bytepan.com
   - static.canva.com
   - static.captcha-delivery.com
@@ -1937,7 +2011,6 @@ domain_set:
   - static.iris.informa.com
   - static.itch.io
   - static.j51.net
-  - static.javatpoint.com
   - static.javcdn.info
   - static.javhd.com
   - static.jsbin.com
@@ -1986,10 +2059,12 @@ domain_set:
   - static.playstation.com
   - static.plus.net
   - static.politico.com
+  - static.polldaddy.com
   - static.probit.com
   - static.queue-it.net
   - static.rakuten.com
   - static.redhat.com
+  - static.registration.bluehost.com
   - static.reo.dev
   - static.replay.io
   - static.rust-lang.org
@@ -2009,6 +2084,7 @@ domain_set:
   - static.tenki.jp
   - static.test-beta.com
   - static.theguardian.com
+  - static.toiimg.com
   - static.tokenview.io
   - static.toss.im
   - static.tp-link.com
@@ -2019,7 +2095,9 @@ domain_set:
   - static.typingclub.com
   - static.ui.com
   - static.underhentai.net
+  - static.uptimia.com
   - static.v2ex.com
+  - static.vanta.com
   - static.vinted.com
   - static.vocadb.net
   - static.webclicks24.com
@@ -2063,6 +2141,7 @@ domain_set:
   - stats.setapp.com
   - stats.setapp.macpaw.dev
   - status.ui.com
+  - stbff.newfold.com
   - steamcdn-a.akamaihd.net
   - steamusercontent-a.akamaihd.net
   - steamuserimages-a.akamaihd.net
@@ -2118,6 +2197,7 @@ domain_set:
   - thingproxy.freeboard.io
   - thumbnail.missav.com
   - thumbnailer.mixcloud.com
+  - thumbnails.applegamingwiki.com
   - thumbnails.cbsig.net
   - thumbor.forbes.com
   - thumbs.onlyfans.com
@@ -2133,9 +2213,11 @@ domain_set:
   - ton.local.twitter.com
   - tools-static.wmflabs.org
   - tools.refokus.com
+  - top1cdn.top1health.com
   - topbar-static.piano.io
   - torrindex.net
   - touchgal-image.moyu.moe
+  - townsquare.media
   - tracking.inflection.io
   - truth.bahamut.com.tw
   - tuf-repo-cdn.sigstore.dev
@@ -2169,6 +2251,7 @@ domain_set:
   - us-js.zonka.co
   - us.hamreus.com
   - us01ccistatic.zoom.us
+  - us1-prod-images.disco-api.com
   - use.fortawesome.com
   - use.typekit.com
   - use.typekit.net
@@ -2176,9 +2259,6 @@ domain_set:
   - user-uploads.perchance.org
   - usercontent.flodesk.com
   - userfiles.uptimerobot.com
-  - userimg-assets.customeriomail.com
-  - userimg-bee.customeriomail.com
-  - userimg.customeriomail.com
   - userpic.redgifs.com
   - useruploads.visualwebsiteoptimizer.com
   - utteranc.es
@@ -2240,6 +2320,8 @@ domain_set:
   - website-cdn.ipinfo.io
   - website-prod.cache.wpscdn.com
   - webstatic.chargebee.com
+  - widget.automizely.com
+  - widget.datablocks.se
   - widget.docsbot.ai
   - widget.freshworks.com
   - widget.gotolstoy.com
@@ -2270,6 +2352,7 @@ domain_set:
   - www-static.ripe.net
   - www.10086.win
   - www.bbthat.com
+  - www.gstatic.com
   - www.pngmart.com
   - www.tbstat.com
   - www.typescriptlang.org
@@ -2284,9 +2367,13 @@ domain_suffix_set:
   - 2mdn.net
   - 4cdn.org
   - 4everland.io
+  - 666565.xyz
   - 7mmtv.tv
   - 91pic.org
   - 98avcdn.xyz
+  - 99avcdn.com
+  - 99avcdn.net
+  - 99avcdn.org
   - 9cache.com
   - a.storyblok.com
   - a1tb.com
@@ -2397,6 +2484,7 @@ domain_suffix_set:
   - cdn.discordapp.com
   - cdn.getfeedback.com
   - cdn.greenhouse.io
+  - cdn.icann.org
   - cdn.ifixit.com
   - cdn.imgeng.in
   - cdn.imghaste.com
@@ -2406,6 +2494,7 @@ domain_suffix_set:
   - cdn.mozilla.net
   - cdn.nimg.jp
   - cdn.nintendo.net
+  - cdn.optimizely.com
   - cdn.pbs.org
   - cdn.printfriendly.com
   - cdn.prismic.io
@@ -2480,6 +2569,8 @@ domain_suffix_set:
   - csp.withgoogle.com
   - ctfassets.net
   - cthd.icu
+  - customerioforms.com
+  - customeriomail.com
   - cwwcdn.com
   - data.debugbear.com
   - dataplane.rudderstack.com
@@ -2505,6 +2596,7 @@ domain_suffix_set:
   - doppiocdn.live
   - doppiocdn.net
   - doppiocdn.org
+  - dreamscape.cloud
   - drivecdn.com
   - dropboxstatic.com
   - dsc.cloud
@@ -2535,6 +2627,7 @@ domain_suffix_set:
   - esm.run
   - esm.sh
   - espncdn.com
+  - etsystatic.com
   - eu-browse.startpage.com
   - eu-proxy.startpage.com
   - events.backtrace.io
@@ -2609,6 +2702,7 @@ domain_suffix_set:
   - gitpage.si
   - glass.adidas.com
   - glbimg.com
+  - gold-usergeneratedcontent.net
   - googleadservices.com
   - googleusercontent.com
   - gravatar.com
@@ -2698,6 +2792,7 @@ domain_suffix_set:
   - instant.page
   - intercomassets.com
   - intercomcdn.com
+  - intercomcdn.io
   - intuitcdn.net
   - invisionapp-cdn.com
   - ipfs-gateway.cloud
@@ -2786,6 +2881,7 @@ domain_suffix_set:
   - lbpicpic.com
   - lbpictupian.com
   - lencr.org
+  - li-cdn.com
   - liangzipic.com
   - licensebuttons.net
   - line-cdn.net
@@ -2806,6 +2902,7 @@ domain_suffix_set:
   - lzzypic.com
   - makeuseofimages.com
   - mangadex.network
+  - mangguo-youku.com
   - mapi.4kvm.net
   - marketing.aws.dev
   - mcusercontent.com
@@ -2868,6 +2965,7 @@ domain_suffix_set:
   - nineyu.com
   - ninjastream.to
   - nitrocdn.com
+  - nodecdn.net
   - nodejs.org
   - nordcdn.com
   - notify.bugsnag.com
@@ -2990,6 +3088,7 @@ domain_suffix_set:
   - repo.anaconda.com
   - res.office365.com
   - rescript-lang.org
+  - rlcdn.com
   - rocketcdn.me
   - rollupjs.org
   - roseimgs.com
@@ -3017,6 +3116,7 @@ domain_suffix_set:
   - sentry-cdn.com
   - sessions.bugsnag.com
   - settings.crashlytics.com
+  - sfbassets.com
   - sfdcstatic.com
   - sftcdn.net
   - shgcdn.com
@@ -3031,6 +3131,7 @@ domain_suffix_set:
   - siteintercept.qualtrics.com
   - sitescdn.net
   - sixyik.com
+  - skyearth8.xyz
   - skypack.dev
   - skypeassets.com
   - slack-edge.com
@@ -3042,6 +3143,7 @@ domain_suffix_set:
   - smmallcdn.net
   - smushcdn.com
   - sndcdn.com
+  - sndimg.com
   - sny.monosnap.com
   - snzypic.com
   - someonewhocares.org
@@ -3097,6 +3199,7 @@ domain_suffix_set:
   - surge.sh
   - surrit.com
   - susercontent.com
+  - sway-cdn.com
   - swiftypecdn.com
   - sxccdn.com
   - szjal.cn
@@ -3127,6 +3230,7 @@ domain_suffix_set:
   - trackerslist.com
   - trafficdeposit.com
   - transcend-cdn.com
+  - tripcdn.com
   - trustless-gateway.link
   - ttcache.com
   - ttl.sh
@@ -3202,6 +3306,7 @@ domain_suffix_set:
   - wpcomstaging.com
   - wpmucdn.com
   - wsimg.com
+  - wsrv.nl
   - www.s81c.com
   - xda-cdn.com
   - xdaimages.com
@@ -3239,9 +3344,11 @@ domain_keyword_set:
   - -assets.worldsex.com
   - -cdn.eporner.com
   - -files.gitbook.io
+  - -images.disco-api.com
   - -res.cloudinary.com
   - -thumbs.pornhost.com
   - -thumbs.worldsex.com
+  - 99avcdn
   - cdn.adultempire.com
   - dsn.algolia.net
   - vod-adaptive.akamaized.net
@@ -3250,6 +3357,7 @@ domain_wildcard_set:
   - *.fsvod?.com
   - *.img.*.sendibm?.com
   - *.kuaikan-cdn?.com
+  - *.skyearth?.xyz
   - appcenter-filemanagement-*.cloudapp.net
   - assets*.freshdesk.com
   - blog-imgs-??.2nt.com
@@ -3263,6 +3371,7 @@ domain_wildcard_set:
   - cdn?.18girlssex.com
   - cdn?.mikuclub.fun
   - cdns.*.gigya.com
+  - chunk-*.mux.com
   - file?.mikuclub.fun
   - i?.nhentai.net
   - image*.cloudokyo.cloud
