@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Adblock4limbo——导航及各类功能函数合集.[github]
 // @namespace    https://limbopro.com/Adguard/Adblock4limbo.function.js
-// @version      0.2025.02.27
+// @version      0.2025.08.10
 // @license      CC BY-NC-SA 4.0
 // @description  实用网站导航 —— 免费在线影视/前端学习/开发者社区/新闻/建站/下载工具/格式转换工具/电子书/新闻/写作/免费漫画等；
 // @author       limbopro
@@ -1244,8 +1244,8 @@ var parentNodeX = [['Cloudflare', 'https://speed.cloudflare.com/', '_blank', '0'
 ['pingwest', 'https://www.pingwest.com/', '_blank', 'technews', 'common'],
 ['iyf爱壹帆', 'https://www.iyf.tv/', '_blank', 'movies', 'better'],
 ['欧乐影视', 'https://www.olevod.tv/', '_blank', 'movies', 'special'],
-['CN影视', 'https://cnys.tv/', '_blank', 'movies', 'better'],
-['影视TV', 'https://yingshi.tv/', '_blank', 'movies', 'better'],
+//['CN影视', 'https://cnys.tv/', '_blank', 'movies', 'better'],
+//['影视TV', 'https://yingshi.tv/', '_blank', 'movies', 'better'],
 ['剧迷网', 'https://gimy.ai/', '_blank', 'movies', 'better'],
 ['Raining FM', 'https://raining.fm/', '_blank', 'imusic', 'better'],
 ['SoundCloud', 'https://soundcloud.com/', '_blank', 'imusic', 'better'],
@@ -2105,7 +2105,7 @@ function echo_check_switch(x) {
 const js_common_fx = {
     crisp: 'https://limbopro.com/Adguard/crisp.js' // crisp 聊天系统 chat
 }
-*/    
+*/
 
 // 动态创建并引用外部资源 外部样式表 外部脚本
 function thrd_party_file(tagname, url, where, id) {
@@ -2365,6 +2365,8 @@ function closeP() {
 // 在番号详情页追加在线预览链接
 function tmd(parentsSelector, code, textContent) {
 
+    var dmm = code.replace(/-/g, '00')
+
     function otherSearch() {
         // 试试其他搜索：
 
@@ -2405,9 +2407,15 @@ function tmd(parentsSelector, code, textContent) {
         aAdd2Parent('番号搜索[聚合]', 'https://limbopro.com/btsearch.html#gsc.tab=0&gsc.q=', code + "&gsc.sort=")
         aAdd2Parent('谷歌搜索🔍', 'https://www.google.com/search?q=', code)
         aAdd2Parent('Javbus📖', 'https://www.javbus.com/search/', code + '&type=&parent=ce')
+        aAdd2Parent('DMM🇯🇵', 'https://video.dmm.co.jp/av/list/?key=', dmm)
+
         console.log('已生成在线预览链接🔗')
     }
-    otherSearch()
+
+    if (document.querySelector('#p1') == null) {
+        console.log('开始生成在线预览链接...')
+        otherSearch()
+    }
 
 }
 
@@ -2487,7 +2495,7 @@ function ysMax() {
         aAdd2Parent('小宝影视', ysMaxurl.xiaoxintv, ysCode)
         aAdd2Parent('iyf爱壹帆', ysMaxurl.iyf, ysCode)
         aAdd2Parent('欧乐影视', ysMaxurl.ole, ysCode)
-        aAdd2Parent('影视TV', ysMaxurl.yingshitv, ysCode)
+        //aAdd2Parent('影视TV', ysMaxurl.yingshitv, ysCode)
         aAdd2Parent('影视搜索[聚合]', ysMaxurl.juhesousuo, ysCode)
         console.log('已生成在线预览链接🔗')
     }

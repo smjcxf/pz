@@ -1,7 +1,7 @@
 /**
  * @author fmz200
  * @function 微博去广告
- * @date 2025-06-05 15:24:55
+ * @date 2025-07-30 14:30:17
  */
 
 let url = $request.url;
@@ -66,12 +66,25 @@ try {
     delete resp_data.reward_info;
     console.log('处理微博详情页面广告结束💕💕');
   }
+  if (url.includes("/statuses/container_detail?")) {
+    resp_data.pageHeader.data.items = resp_data.pageHeader.data.items.filter(item =>
+      item?.category !== 'card' && item?.category !== "group" && item?.category !== "wboxcard" && item?.type !== 'share'
+    );
+    // 详情页面的关注悬浮横幅
+    if (resp_data.detailInfo?.extend?.follow_data) {
+      delete resp_data.detailInfo.extend.follow_data;
+    }
+  }
 
   // 6、移除微博首页的多余tab页 微博首页Tab标签页
   if (url.includes("/groups/allgroups/v2")) {
     removePageDataAds(resp_data.pageDatas);
     // 删除恶心人的“全部微博”
-    delete resp_data.pageDatas[0].categories[0].pageDatas[0];
+    if (resp_data.pageDatas[0].categories) {
+      delete resp_data.pageDatas[0].categories[0].pageDatas[0];
+    } else {
+      delete resp_data.pageDatas[1].categories[0].pageDatas[0];
+    }
   }
 
   // 7、话题页面 微博话题页面
@@ -144,6 +157,16 @@ try {
   if (url.includes("/comments/mix_comments?")) {
     resp_data.datas = resp_data.datas.filter(item => item.adType !== "广告");
     console.log('处理评论区广告结束💕💕');
+  }
+  if (url.includes("/statuses/container_detail_comment?") || url.includes("/statuses/container_detail_mix?")) {
+    resp_data.items = resp_data.items.filter(item => item.type !== "trend" && !item.commentAdType);
+    console.log('处理评论区广告结束💕💕');
+  }
+  
+  // 9、转发区广告
+  if (url.includes("/statuses/container_detail_forward?")) {
+    resp_data.items = resp_data.items.filter(item => item.type === "forward");
+    console.log('处理转发区广告结束💕💕');
   }
 
   console.log('广告数据处理完毕🧧🧧');

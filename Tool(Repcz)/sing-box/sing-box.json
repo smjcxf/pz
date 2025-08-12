@@ -1,20 +1,18 @@
 {
     "dns": {
         "servers": [
-            {"tag": "cloudflare","address": "https://1.1.1.1/dns-query","detour": "Proxy"},
-            {"tag": "ali","address": "223.5.5.5","detour": "direct"},
-            {"tag": "remote_fakeip","address": "fakeip"}
+            {"tag": "cloudflare","type": "https","server": "1.1.1.1","detour": "Proxy"},
+            {"tag": "ali","type": "https","server": "223.6.6.6"},
+            {"tag": "fakeip","type": "fakeip","inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"}
         ],
         "rules": [
-            {"outbound": "any","server": "ali"},
             {"clash_mode": "全局直连","action": "route","server": "ali"},
-            {"clash_mode": "全局代理","action": "route","server": "remote_fakeip"},
+            {"clash_mode": "全局代理","action": "route","server": "fakeip"},
             {"query_type": "HTTPS","action": "reject"},
-            {"query_type": ["A","AAAA"],"action": "route","server": "remote_fakeip","rewrite_ttl": 1},
-            {"rule_set": ["ChinaDomain","Apple"],"action": "route","server": "ali"}
+            {"query_type": ["A","AAAA"],"action": "route","server": "fakeip","rewrite_ttl": 1},
+            {"rule_set": ["ChinaDomain"],"action": "route","server": "ali"}
         ],
         "final": "cloudflare",
-        "fakeip": {"enabled": true,"inet4_range": "198.18.0.0/15","inet6_range": "fc00::/18"},
         "independent_cache": true
     },
     "outbounds": [
@@ -38,6 +36,7 @@
         {"tag": "🇨🇳 Taiwan","type": "urltest","outbounds": [],"url": "http://1.1.1.1/generate_204","interval": "10m","tolerance": 0,"interrupt_exist_connections": false}
     ],
     "route": {
+        "default_domain_resolver": {"server": "ali"},
         "rule_set": [
             {"tag": "Ads","type": "remote","format": "binary","url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Ads_SukkaW.srs","download_detour": "direct"},
             {"tag": "Telegram", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Telegram.srs", "download_detour": "direct"},
@@ -47,9 +46,8 @@
             {"tag": "OneDrive", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/OneDrive.srs", "download_detour": "direct"},
             {"tag": "Github", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Github.srs", "download_detour": "direct"},
             {"tag": "Twitter", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Twitter.srs", "download_detour": "direct"},
-            {"tag": "Apple", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Apple.srs", "download_detour": "direct"},
             {"tag": "AppleProxy", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/AppleProxy.srs", "download_detour": "direct"},
-            {"tag": "AI", "type": "remote", "format": "binary", "url": "https://git.repcz.link/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-ai-chat-!cn.srs", "download_detour": "direct"},
+            {"tag": "AI", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/AI.srs", "download_detour": "direct"},
             {"tag": "Emby", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Emby.srs", "download_detour": "direct"},
             {"tag": "Epic", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Epic.srs", "download_detour": "direct"},
             {"tag": "Steam", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/Steam.srs", "download_detour": "direct"},
@@ -60,9 +58,8 @@
             {"tag": "PrimeVideo", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/PrimeVideo.srs", "download_detour": "direct"},
             {"tag": "HBO", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/HBO.srs", "download_detour": "direct"},
             {"tag": "TikTok", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/TikTok.srs", "download_detour": "direct"},
-            {"tag": "ChinaDomain", "type": "remote", "format": "binary", "url": "https://git.repcz.link/raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cn.srs", "download_detour": "direct"},
-            {"tag": "ChinaIP", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Loyalsoldier/geoip/raw/release/srs/cn.srs", "download_detour": "direct"},
-            {"tag": "geolocation-!cn","type": "remote","format": "binary","url": "https://git.repcz.link/raw.githubusercontent.com/CHIZI-0618/v2ray-rules-dat/release/singbox_rule_set/geosite-geolocation-!cn.srs","download_detour": "direct"}
+            {"tag": "ChinaDomain", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Repcz/Tool/raw/X/sing-box/Rules/ChinaDomain.srs", "download_detour": "direct"},
+            {"tag": "ChinaIP", "type": "remote", "format": "binary", "url": "https://git.repcz.link/github.com/Loyalsoldier/geoip/raw/release/srs/cn.srs", "download_detour": "direct"}
         ],
         "rules": [
             {"action": "sniff","sniffer": ["http","tls","quic","dns"],"timeout": "500ms"},
@@ -79,10 +76,9 @@
             {"rule_set": ["Emby"],"action": "route","outbound": "Emby"},
             {"rule_set": ["Steam","Epic"],"action": "route","outbound": "Game"},
             {"rule_set": ["Bahamut","Netflix","Disney","PrimeVideo","HBO","TikTok"],"action": "route","outbound": "ProxyMedia"},
-            {"rule_set": ["AppleProxy"],"action": "route","outbound": "🇭🇰 HongKong"},
-            {"rule_set": ["geolocation-!cn"],"action": "route","outbound": "Proxy"},
             {"action": "resolve"},
-            {"rule_set": ["ChinaDomain","ChinaIP","Apple"],"action": "route","outbound": "direct"}
+            {"rule_set": ["ChinaDomain","ChinaIP"],"action": "route","outbound": "direct"},
+            {"rule_set": ["AppleProxy"],"action": "route","outbound": "🇭🇰 HongKong"}
         ],
         "auto_detect_interface": true,
         "final": "Final"

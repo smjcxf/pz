@@ -1,4 +1,4 @@
-# 最后更新时间：2025-05-28 20:50
+# 最后更新时间：2025-08-02 18:25
 
 ##### A #####
 
@@ -38,6 +38,9 @@ DOMAIN-SUFFIX,emby.eu.org
 # CaptainZ
 DOMAIN-SUFFIX,wiri.tk
 
+# 存档服
+DOMAIN-SUFFIX,zn.al
+
 ##### D #####
 
 # Dolphin(海豚)
@@ -45,6 +48,9 @@ DOMAIN-SUFFIX,xiaoyi.one
 
 # DegYaxEmby
 DOMAIN-SUFFIX,e.degyax.one
+
+# Doubon
+DOMAIN-SUFFIX,114514.quest
 
 ##### E #####
 
@@ -187,8 +193,7 @@ DOMAIN-SUFFIX,mulgore.net
 DOMAIN-SUFFIX,emby.mdss.cloud
 
 # 墨云阁
-DOMAIN-SUFFIX,emby-myg-de.vfing.de
-DOMAIN,2pfdml.mobaiemby.site
+DOMAIN,mcdn.mobaiemby.site
 
 ##### N #####
 
@@ -344,6 +349,9 @@ DOMAIN-SUFFIX,emby.run
 DOMAIN-SUFFIX,staryuki.com
 DOMAIN-SUFFIX,zabc.net
 
+# ShrekPublic
+DOMAIN-SUFFIX,shrekmedia.org
+
 ##### T #####
 
 # 探花TV(Jellyfin Porn)
@@ -367,6 +375,9 @@ DOMAIN-SUFFIX,texon.fans
 
 # 桃子
 DOMAIN-SUFFIX,embymv.link
+
+# Theluyuan
+DOMAIN-SUFFIX,theluyuan.com
 
 ##### U #####
 
@@ -412,6 +423,9 @@ DOMAIN-SUFFIX,emby.wtf
 DOMAIN-SUFFIX,pub1.emby.wtf
 DOMAIN-SUFFIX,pub2.emby.wtf
 DOMAIN-SUFFIX,pub3.emby.wtf
+DOMAIN-SUFFIX,pub1.term.wtf
+DOMAIN-SUFFIX,pub2.term.wtf
+DOMAIN-SUFFIX,pub3.term.wtf
 DOMAIN-SUFFIX,pub1cf.emby.wtf
 DOMAIN-SUFFIX,pub2cf.emby.wtf
 DOMAIN-SUFFIX,pub3cf.emby.wtf
@@ -427,10 +441,17 @@ DOMAIN-SUFFIX,embyplus.org
 DOMAIN-SUFFIX,zox.show
 DOMAIN-SUFFIX,acemby.org
 
+# Zox
+DOMAIN-SUFFIX,3767483.xyz
+
 # 梓澪の妙妙屋
 DOMAIN-SUFFIX,zi0.icu
 
 ##### 0-9 #####
+
+# 105°
+DOMAIN-SUFFIX,ciallo.party
+
 
 ##### 未分类 #####
 

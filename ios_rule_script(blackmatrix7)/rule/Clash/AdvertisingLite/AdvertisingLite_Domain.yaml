@@ -1,13 +1,13 @@
 # NAME: AdvertisingLite
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-22 02:03:23
-# DOMAIN: 23752
+# UPDATED: 2025-08-12 02:03:40
+# DOMAIN: 23753
 # DOMAIN-KEYWORD: 187
-# DOMAIN-SUFFIX: 13927
+# DOMAIN-SUFFIX: 13942
 # IP-CIDR: 186
 # IP-CIDR6: 1
-# TOTAL: 38053
+# TOTAL: 38069
 payload:
   - '00-gov.cn'
   - '0024aadd.com'
@@ -1707,6 +1707,7 @@ payload:
   - 'adsdk.com'
   - 'adsdk.vivo.com.cn'
   - 'adsdot.ph'
+  - 'adsehera.ximalaya.com'
   - 'adsensecamp.com'
   - 'adsensedetective.com'
   - 'adser.io'
@@ -25322,6 +25323,7 @@ payload:
   - '+.admedia.com'
   - '+.admeta.vo.llnwd.net'
   - '+.admgr.qingting.fm'
+  - '+.admiitad.com'
   - '+.admin.louxia.org'
   - '+.admin5.com'
   - '+.admin6.com'
@@ -25646,6 +25648,7 @@ payload:
   - '+.ahjzys.com'
   - '+.ahlxxx.com'
   - '+.ahqlx.top'
+  - '+.ahqovxli.com'
   - '+.ahszgog.com'
   - '+.ahuac.com'
   - '+.ahunai.cn'
@@ -25873,6 +25876,7 @@ payload:
   - '+.analyticsengine.s3.amazonaws.com'
   - '+.analyticsv2.dol.gr'
   - '+.analyze.full-marke.com'
+  - '+.analyzer51.fc2.com'
   - '+.analyzer52.fc2.com'
   - '+.anastasiaana.com'
   - '+.anatomicele.site'
@@ -27303,6 +27307,7 @@ payload:
   - '+.cloud.zyiis.net'
   - '+.cloudad.asia'
   - '+.cloudcdn.dopa.com.cn'
+  - '+.cloudfront-labs.amazonaws.com'
   - '+.cloudmobi.net'
   - '+.cloudpush.iqiyi.com'
   - '+.clubpenguinclub.com'
@@ -28971,6 +28976,7 @@ payload:
   - '+.findnsave.idahostatesman.com'
   - '+.finead.cn'
   - '+.fingahvf.top'
+  - '+.fipabtomqok.com'
   - '+.fipipo.cn'
   - '+.firefang.cn'
   - '+.fishkekcamp.info'
@@ -29043,6 +29049,7 @@ payload:
   - '+.fpdownload.macromedia.com'
   - '+.fqtra.com'
   - '+.fqzds.com'
+  - '+.fractionfridgejudiciary.com'
   - '+.frame.enet.com.cn'
   - '+.fraudmetrix.cn'
   - '+.frdhq.cn'
@@ -29459,6 +29466,7 @@ payload:
   - '+.gneusqa.cn'
   - '+.gnmbd.top'
   - '+.gnncc.cc'
+  - '+.go-mpulse.net'
   - '+.go.10086.cn'
   - '+.go.hangzhou.com.cn'
   - '+.go.onclasrv.com'
@@ -29569,6 +29577,7 @@ payload:
   - '+.gtmsdd.alicdn.com'
   - '+.gtmucs.cn'
   - '+.gtnde.com'
+  - '+.gtrk.s3.amazonaws.com'
   - '+.gu.qlogo.cn'
   - '+.guaas.com'
   - '+.guang.lesports.com'
@@ -31139,6 +31148,7 @@ payload:
   - '+.kqy1.com'
   - '+.kr.sybspools.com'
   - '+.krakeshlaja.com'
+  - '+.kreopbkabsit.com'
   - '+.krux.net'
   - '+.ks67.com'
   - '+.ksdsuzhou.com'
@@ -32694,6 +32704,7 @@ payload:
   - '+.obj9.cn'
   - '+.oca.telemetry.microsoft.com.nsatc.net'
   - '+.ocm8.masmovil.es'
+  - '+.ocponcphaafb.com'
   - '+.ocsp.godaddy.com'
   - '+.octopuszyw.cn'
   - '+.od0gddq27wkk.com'
@@ -33303,6 +33314,7 @@ payload:
   - '+.pp9899.com'
   - '+.pp9kk.com'
   - '+.ppcashpop.com'
+  - '+.ppezijkacga.com'
   - '+.ppjia55.com'
   - '+.ppoi.org'
   - '+.pptte.com'
@@ -34900,6 +34912,7 @@ payload:
   - '+.stats.uswitch.com'
   - '+.stats.videodelivery.net'
   - '+.stats.visistat.com'
+  - '+.stats.wp.com'
   - '+.stats.wwd.com'
   - '+.stats.yinyuetai.com'
   - '+.stats.ynet.co.il'
@@ -35207,6 +35220,7 @@ payload:
   - '+.taplytics.com'
   - '+.tappx.com'
   - '+.taptica.com'
+  - '+.tapwhigwy.com'
   - '+.tarawerap.com'
   - '+.targetedinfo.com'
   - '+.targetedmedia.com.cn'
@@ -35307,6 +35321,7 @@ payload:
   - '+.thefuncoolstuff.com'
   - '+.thegreenzoneblog.com'
   - '+.thejesperbay.com'
+  - '+.thelifeandmore.com'
   - '+.themaxmall.com'
   - '+.themecat.cn'
   - '+.themee.cn'
@@ -35614,6 +35629,7 @@ payload:
   - '+.traffic.uusee.com'
   - '+.trafficfactory.biz'
   - '+.trafficforce.com'
+  - '+.trafficfuelpixel.s3-us-west-2.amazonaws.com'
   - '+.trafficjam.cn'
   - '+.trafficjunky.com'
   - '+.trafficjunky.net'

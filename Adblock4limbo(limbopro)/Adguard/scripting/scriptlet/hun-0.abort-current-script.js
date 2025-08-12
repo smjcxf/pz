@@ -32,11 +32,11 @@
 
 function abortCurrentScript(...args) {
     runAtHtmlElementFn(( ) => {
-        abortCurrentScriptCore(...args);
+        abortCurrentScriptFn(...args);
     });
 }
 
-function abortCurrentScriptCore(
+function abortCurrentScriptFn(
     target = '',
     needle = '',
     context = ''
@@ -71,8 +71,9 @@ function abortCurrentScriptCore(
     const debug = shouldDebug(extraArgs);
     const exceptionToken = getExceptionTokenFn();
     const scriptTexts = new WeakMap();
+    const textContentGetter = Object.getOwnPropertyDescriptor(Node.prototype, 'textContent').get;
     const getScriptText = elem => {
-        let text = elem.textContent;
+        let text = textContentGetter.call(elem);
         if ( text.trim() !== '' ) { return text; }
         if ( scriptTexts.has(elem) ) { return scriptTexts.get(elem); }
         const [ , mime, content ] =
@@ -370,8 +371,8 @@ function getRandomTokenFn() {
 /******************************************************************************/
 
 const scriptletGlobals = {}; // eslint-disable-line
-const argsList = [["document.createElement","setTimeout"],["window._ceCTSData","hirdetések"],["document.head","currentScript.remove"],["window._ceCTSData","a2blckLayer"],["document.addEventListener","ai_run_"],["document.getElementById","ai_run_"]];
-const hostnamesMap = new Map([["napiszar.com",0],["24.hu",1],["divany.hu",2],["totalcar.hu",2],["totalbike.hu",2],["hazipatika.com",3],["magyarhang.org",[4,5]],["hang.hu",[4,5]]]);
+const argsList = [["document.createElement","setTimeout"],["window._ceCTSData","hirdetések"],["document.head","currentScript.remove"],["window._ceCTSData","a2blckLayer"],["document.addEventListener","ai_run_"],["document.getElementById","ai_run_"],["fetch","mode"]];
+const hostnamesMap = new Map([["napiszar.com",0],["24.hu",1],["divany.hu",2],["totalcar.hu",2],["totalbike.hu",2],["hazipatika.com",3],["magyarhang.org",[4,5]],["hang.hu",[4,5]],["online-filmek.ac",6],["online-filmek.me",6]]);
 const exceptionsMap = new Map([]);
 const hasEntities = false;
 const hasAncestors = false;

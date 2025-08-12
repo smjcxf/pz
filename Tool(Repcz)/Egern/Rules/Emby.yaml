@@ -1,9 +1,8 @@
 # 规则名称: Emby
-# 规则统计: 187
+# 规则统计: 195
 
 no_resolve: true
 domain_set:
-  - 2pfdml.mobaiemby.site
   - cc.coemn.com
   - cdn1.nebula-media.org
   - cf-cdn1.nebula-media.org
@@ -11,17 +10,20 @@ domain_set:
   - cuinf.sfcat.link
   - emby-cdn1.nebula-media.org
   - emby.nebula-media.org
+  - mcdn.mobaiemby.site
   - notnetflix.cos.cat
   - starharn-cf.nebula-media.org
   - starharn.nebula-media.org
   - web-starharn.nebula-media.org
   - web.nebula-media.org
 domain_suffix_set:
+  - 114514.quest
   - 123456.al
   - 16bit.cfd
   - 20120714.xyz
   - 252798.xyz
   - 285286.xyz
+  - 3767483.xyz
   - 404.sb
   - 4545.cf
   - 581658.best
@@ -53,6 +55,7 @@ domain_suffix_set:
   - cf.odysseyplus.site
   - charontv.com
   - cherrytv.one
+  - ciallo.party
   - cinema.facmata.net
   - deja-vu.beauty
   - dicarerhome.com
@@ -60,7 +63,6 @@ domain_suffix_set:
   - ednovas.org
   - em.ssky.me
   - emby-cf.plusmedia.site
-  - emby-myg-de.vfing.de
   - emby-sg.plusmedia.site
   - emby.aiyowei.ml
   - emby.bid
@@ -151,17 +153,21 @@ domain_suffix_set:
   - pornemby.club
   - post.cn2gias.uk
   - pub1.emby.wtf
+  - pub1.term.wtf
   - pub1back.emby.wtf
   - pub1cf.emby.wtf
   - pub2.emby.wtf
+  - pub2.term.wtf
   - pub2back.emby.wtf
   - pub2cf.emby.wtf
   - pub3.emby.wtf
+  - pub3.term.wtf
   - pub3back.emby.wtf
   - pub3cf.emby.wtf
   - reddust.link
   - ru.odysseyplus.site
   - servers.xeton.dev
+  - shrekmedia.org
   - shuipo.lol
   - speedx.one
   - starcat.eu.org
@@ -171,6 +177,7 @@ domain_suffix_set:
   - studyfun.live
   - tanhuatv.site
   - texon.fans
+  - theluyuan.com
   - tkremby.xyz
   - tv.worldline.space
   - uuuoo.cc
@@ -181,6 +188,7 @@ domain_suffix_set:
   - yunti.online
   - zabc.net
   - zi0.icu
+  - zn.al
   - zox.show
 ip_cidr_set:
   - 152.53.67.239/32

@@ -1,6 +1,7 @@
 # 规则名称: ChinaDomain
-# 规则统计: 801
+# 规则统计: 833
 
+HOST,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe,ChinaDomain
 HOST,acg.tv,ChinaDomain
 HOST,assets1.xboxlive.cn,ChinaDomain
 HOST,assets2.xboxlive.cn,ChinaDomain
@@ -12,6 +13,7 @@ HOST,dl.ubnt.com,ChinaDomain
 HOST,doh.pub,ChinaDomain
 HOST,gstore.val.manlaxy.com,ChinaDomain
 HOST,i.dell.com,ChinaDomain
+HOST,kms.03k.org,ChinaDomain
 HOST,lv.queniujq.cn,ChinaDomain
 HOST,media.cdn.queniuqe.com,ChinaDomain
 HOST,ocsp.globalsign.com,ChinaDomain
@@ -21,6 +23,7 @@ HOST,www.intel.cn,ChinaDomain
 HOST,www.layuicdn.com,ChinaDomain
 HOST-SUFFIX,10010.com,ChinaDomain
 HOST-SUFFIX,10086.cn,ChinaDomain
+HOST-SUFFIX,110.com,ChinaDomain
 HOST-SUFFIX,111.com,ChinaDomain
 HOST-SUFFIX,115.com,ChinaDomain
 HOST-SUFFIX,115cdn.com,ChinaDomain
@@ -69,6 +72,7 @@ HOST-SUFFIX,36kr.com,ChinaDomain
 HOST-SUFFIX,36krcdn.com,ChinaDomain
 HOST-SUFFIX,39.net,ChinaDomain
 HOST-SUFFIX,3dmgame.com,ChinaDomain
+HOST-SUFFIX,4008823823.com,ChinaDomain
 HOST-SUFFIX,4399.com,ChinaDomain
 HOST-SUFFIX,51cto.com,ChinaDomain
 HOST-SUFFIX,51ctocdn.cn,ChinaDomain
@@ -107,6 +111,7 @@ HOST-SUFFIX,alibaba.com,ChinaDomain
 HOST-SUFFIX,alibabachengdun.com,ChinaDomain
 HOST-SUFFIX,alibabadns.com,ChinaDomain
 HOST-SUFFIX,alibabausercontent.com,ChinaDomain
+HOST-SUFFIX,alibtrip.com,ChinaDomain
 HOST-SUFFIX,alicdn.com,ChinaDomain
 HOST-SUFFIX,alicloudccp.com,ChinaDomain
 HOST-SUFFIX,alidns.com,ChinaDomain
@@ -114,10 +119,12 @@ HOST-SUFFIX,aligames.com,ChinaDomain
 HOST-SUFFIX,aliimg.com,ChinaDomain
 HOST-SUFFIX,alikunlun.com,ChinaDomain
 HOST-SUFFIX,alikunlun.net,ChinaDomain
+HOST-SUFFIX,alimama.com,ChinaDomain
 HOST-SUFFIX,alios.cn,ChinaDomain
 HOST-SUFFIX,alipan.com,ChinaDomain
 HOST-SUFFIX,alipay.cn,ChinaDomain
 HOST-SUFFIX,alipay.com,ChinaDomain
+HOST-SUFFIX,alipaydev.com,ChinaDomain
 HOST-SUFFIX,alipayobjects.com,ChinaDomain
 HOST-SUFFIX,aliyun.com,ChinaDomain
 HOST-SUFFIX,aliyuncs.com,ChinaDomain
@@ -180,6 +187,7 @@ HOST-SUFFIX,bytecdntp.com,ChinaDomain
 HOST-SUFFIX,byted-static.com,ChinaDomain
 HOST-SUFFIX,bytedance.com,ChinaDomain
 HOST-SUFFIX,bytednsdoc.com,ChinaDomain
+HOST-SUFFIX,byteeffecttos.com,ChinaDomain
 HOST-SUFFIX,bytegoofy.com,ChinaDomain
 HOST-SUFFIX,byteimg.com,ChinaDomain
 HOST-SUFFIX,bytetcc.com,ChinaDomain
@@ -243,6 +251,7 @@ HOST-SUFFIX,coolapkmarket.com,ChinaDomain
 HOST-SUFFIX,coolapkmarket.net,ChinaDomain
 HOST-SUFFIX,cowcs.com,ChinaDomain
 HOST-SUFFIX,cowtransfer.com,ChinaDomain
+HOST-SUFFIX,coze.cn,ChinaDomain
 HOST-SUFFIX,csdn.com,ChinaDomain
 HOST-SUFFIX,csdn.net,ChinaDomain
 HOST-SUFFIX,csdnimg.cn,ChinaDomain
@@ -256,6 +265,11 @@ HOST-SUFFIX,dbank.com,ChinaDomain
 HOST-SUFFIX,dbankcdn.cn,ChinaDomain
 HOST-SUFFIX,dbankcdn.com,ChinaDomain
 HOST-SUFFIX,dbankcloud.com,ChinaDomain
+HOST-SUFFIX,dcarapi.com,ChinaDomain
+HOST-SUFFIX,dcarimg.com,ChinaDomain
+HOST-SUFFIX,dcarlive.com,ChinaDomain
+HOST-SUFFIX,dcarstatic.com,ChinaDomain
+HOST-SUFFIX,dcarvod.com,ChinaDomain
 HOST-SUFFIX,dewu.com,ChinaDomain
 HOST-SUFFIX,dfcfw.com,ChinaDomain
 HOST-SUFFIX,dianping.com,ChinaDomain
@@ -279,9 +293,11 @@ HOST-SUFFIX,docer.com,ChinaDomain
 HOST-SUFFIX,docin.com,ChinaDomain
 HOST-SUFFIX,docschina.org,ChinaDomain
 HOST-SUFFIX,donews.com,ChinaDomain
+HOST-SUFFIX,dongchedi.com,ChinaDomain
 HOST-SUFFIX,douban.com,ChinaDomain
 HOST-SUFFIX,douban.fm,ChinaDomain
 HOST-SUFFIX,doubanio.com,ChinaDomain
+HOST-SUFFIX,doubao.com,ChinaDomain
 HOST-SUFFIX,douyin.com,ChinaDomain
 HOST-SUFFIX,douyincdn.com,ChinaDomain
 HOST-SUFFIX,douyinliving.com,ChinaDomain
@@ -298,6 +314,7 @@ HOST-SUFFIX,dpfile.com,ChinaDomain
 HOST-SUFFIX,duapp.com,ChinaDomain
 HOST-SUFFIX,duba.net,ChinaDomain
 HOST-SUFFIX,duokan.com,ChinaDomain
+HOST-SUFFIX,dwz.cn,ChinaDomain
 HOST-SUFFIX,dxy.cn,ChinaDomain
 HOST-SUFFIX,dxycdn.com,ChinaDomain
 HOST-SUFFIX,eastmoney.com,ChinaDomain
@@ -328,6 +345,7 @@ HOST-SUFFIX,fqnovel.com,ChinaDomain
 HOST-SUFFIX,fqnovelpic.com,ChinaDomain
 HOST-SUFFIX,frdic.com,ChinaDomain
 HOST-SUFFIX,freshhema.com,ChinaDomain
+HOST-SUFFIX,freshippo.com,ChinaDomain
 HOST-SUFFIX,fun.tv,ChinaDomain
 HOST-SUFFIX,funshion.com,ChinaDomain
 HOST-SUFFIX,futu5.com,ChinaDomain
@@ -389,6 +407,7 @@ HOST-SUFFIX,hwccpc.cn,ChinaDomain
 HOST-SUFFIX,hwccpc.com,ChinaDomain
 HOST-SUFFIX,hwht.com,ChinaDomain
 HOST-SUFFIX,hwtrip.com,ChinaDomain
+HOST-SUFFIX,hwwt8.com,ChinaDomain
 HOST-SUFFIX,ialicdn.com,ChinaDomain
 HOST-SUFFIX,ibreader.com,ChinaDomain
 HOST-SUFFIX,ibuscloud.com,ChinaDomain
@@ -433,8 +452,10 @@ HOST-SUFFIX,jomoxc.com,ChinaDomain
 HOST-SUFFIX,jpush.cn,ChinaDomain
 HOST-SUFFIX,jstarkan.com,ChinaDomain
 HOST-SUFFIX,kaiyanapp.com,ChinaDomain
+HOST-SUFFIX,kdocs.cn,ChinaDomain
 HOST-SUFFIX,kdslife.com,ChinaDomain
 HOST-SUFFIX,keepcdn.com,ChinaDomain
+HOST-SUFFIX,kfcapp.cn,ChinaDomain
 HOST-SUFFIX,kingsoft-office-service.com,ChinaDomain
 HOST-SUFFIX,kkmh.com,ChinaDomain
 HOST-SUFFIX,klook.com,ChinaDomain
@@ -534,6 +555,7 @@ HOST-SUFFIX,nubia.cn,ChinaDomain
 HOST-SUFFIX,nubia.com,ChinaDomain
 HOST-SUFFIX,oceanengine.com,ChinaDomain
 HOST-SUFFIX,officewebapps.cn,ChinaDomain
+HOST-SUFFIX,okr.com,ChinaDomain
 HOST-SUFFIX,oneplus.cn,ChinaDomain
 HOST-SUFFIX,oneplusbbs.com,ChinaDomain
 HOST-SUFFIX,onlinedown.com,ChinaDomain
@@ -562,12 +584,16 @@ HOST-SUFFIX,pinduoduo.com,ChinaDomain
 HOST-SUFFIX,pinduoduo.net,ChinaDomain
 HOST-SUFFIX,pingan.com,ChinaDomain
 HOST-SUFFIX,pingwest.com,ChinaDomain
+HOST-SUFFIX,pipix.com,ChinaDomain
 HOST-SUFFIX,pphimalayanrt.com,ChinaDomain
 HOST-SUFFIX,pplive.cn,ChinaDomain
 HOST-SUFFIX,pplive.com,ChinaDomain
 HOST-SUFFIX,pps.tv,ChinaDomain
 HOST-SUFFIX,ppsimg.com,ChinaDomain
 HOST-SUFFIX,pptv.com,ChinaDomain
+HOST-SUFFIX,ppximg.com,ChinaDomain
+HOST-SUFFIX,ppxstatic.com,ChinaDomain
+HOST-SUFFIX,ppxvod.com,ChinaDomain
 HOST-SUFFIX,psbc.com,ChinaDomain
 HOST-SUFFIX,pstatp.com,ChinaDomain
 HOST-SUFFIX,pubyun.com,ChinaDomain
@@ -665,6 +691,7 @@ HOST-SUFFIX,takungpao.com,ChinaDomain
 HOST-SUFFIX,tantanapp.com,ChinaDomain
 HOST-SUFFIX,tanx.com,ChinaDomain
 HOST-SUFFIX,taobao.com,ChinaDomain
+HOST-SUFFIX,taobao.org,ChinaDomain
 HOST-SUFFIX,taobaocdn.com,ChinaDomain
 HOST-SUFFIX,taopiaopiao.com,ChinaDomain
 HOST-SUFFIX,tb.cn,ChinaDomain
@@ -707,6 +734,7 @@ HOST-SUFFIX,vivo.com,ChinaDomain
 HOST-SUFFIX,vmall.com,ChinaDomain
 HOST-SUFFIX,vmallres.com,ChinaDomain
 HOST-SUFFIX,volccdn.com,ChinaDomain
+HOST-SUFFIX,volcengine.com,ChinaDomain
 HOST-SUFFIX,volces.com,ChinaDomain
 HOST-SUFFIX,volcvideo.com,ChinaDomain
 HOST-SUFFIX,wallstreetcn.com,ChinaDomain
@@ -733,6 +761,7 @@ HOST-SUFFIX,wps.cn,ChinaDomain
 HOST-SUFFIX,wpscdn.cn,ChinaDomain
 HOST-SUFFIX,wpscdn.com,ChinaDomain
 HOST-SUFFIX,wscn.net,ChinaDomain
+HOST-SUFFIX,wukong.com,ChinaDomain
 HOST-SUFFIX,x3322.net,ChinaDomain
 HOST-SUFFIX,xhscdn.com,ChinaDomain
 HOST-SUFFIX,xiachufang.com,ChinaDomain
@@ -748,6 +777,7 @@ HOST-SUFFIX,xiaomiev.com,ChinaDomain
 HOST-SUFFIX,xiaomixiaoai.com,ChinaDomain
 HOST-SUFFIX,xiaomiyoupin.com,ChinaDomain
 HOST-SUFFIX,xiaote.net,ChinaDomain
+HOST-SUFFIX,xiaoxiaapi.com,ChinaDomain
 HOST-SUFFIX,ximalaya.com,ChinaDomain
 HOST-SUFFIX,xincai.com,ChinaDomain
 HOST-SUFFIX,xinhuanet.com,ChinaDomain
@@ -791,9 +821,11 @@ HOST-SUFFIX,zhipin.com,ChinaDomain
 HOST-SUFFIX,zhuanzfx.com,ChinaDomain
 HOST-SUFFIX,zijieapi.com,ChinaDomain
 HOST-SUFFIX,zjcdn.com,ChinaDomain
+HOST-SUFFIX,zjurl.cn,ChinaDomain
 HOST-SUFFIX,zui.com,ChinaDomain
 HOST-SUFFIX,zuimeitianqi.com,ChinaDomain
 HOST-SUFFIX,zuoyebang.com,ChinaDomain
+HOST-SUFFIX,zybang.com,ChinaDomain
 HOST-WILDCARD,*.ffzy-online?.com,ChinaDomain
 HOST-WILDCARD,*.ffzy-play?.com,ChinaDomain
 HOST-WILDCARD,*.lz-cdn?.com,ChinaDomain

@@ -362,10 +362,10 @@ function safeSelf() {
 /******************************************************************************/
 
 const scriptletGlobals = {}; // eslint-disable-line
-const argsList = [["detected"],["adsbygoogle"],["sessionStorage"],["randno","25"]];
-const hostnamesMap = new Map([["cookomix.com",0],["voyageforum.com",1],["japscan.lol",2],["jeune-gay.fr",3]]);
+const argsList = [["displayCookieWallBanner"],["detected"],["adsbygoogle"],["sessionStorage"],["randno","25"]];
+const hostnamesMap = new Map([["gamekult.com",0],["cookomix.com",1],["voyageforum.com",2],["japscan.*",3],["jeune-gay.fr",4]]);
 const exceptionsMap = new Map([]);
-const hasEntities = false;
+const hasEntities = true;
 const hasAncestors = false;
 
 const collectArgIndices = (hn, map, out) => {

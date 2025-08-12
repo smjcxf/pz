@@ -9,7 +9,7 @@
 #!system = iOS, iPadOS
 #!system_version =
 #!loon_version =
-#!date=2025-06-20 23:40:17
+#!date=2025-07-21 10:20:17
 #!support=约9392行
 #!proxy-select=REJECT
 #############################################
@@ -40,6 +40,10 @@ DOMAIN-SUFFIX, gepush.com
 DOMAIN-SUFFIX, igexin.com
 DOMAIN-SUFFIX, log.aliyuncs.com
 DOMAIN-SUFFIX, zlsdk.1rtb.net
+DOMAIN-SUFFIX, ott.cibntv.net
+DOMAIN-SUFFIX, cdntips.net
+DOMAIN-SUFFIX, tfogc.com
+DOMAIN-SUFFIX, file.myqcloud.com
 # > 收集用户隐私联盟，若有问题自行设置白名单
 DOMAIN-KEYWORD, volc
 DOMAIN-KEYWORD, umeng
@@ -1019,6 +1023,10 @@ DOMAIN-SUFFIX,bsiet.husky.sogou.com
 DOMAIN-SUFFIX,jdqd.jd.com
 DOMAIN-SUFFIX,shouji.sougou.com
 
+# > 搜狗输入法
+# DOMAIN-SUFFIX, business-cdn.shouji.sogou.com, reject
+DOMAIN-SUFFIX, push-service-ios.sginput.qq.com, reject
+
 # > 深圳通微信小程序
 DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
 
@@ -1455,21 +1463,11 @@ DOMAIN-KEYWORD,m.panda.voiceads.cn
 DOMAIN-KEYWORD,iflyad.bj.openstorage.cn
 
 # > 喜马拉雅
+DOMAIN, adse.ximalaya.com
+DOMAIN, adsehera.ximalaya.com
+DOMAIN, adse.wsa.ximalaya.com
 DOMAIN, adbehavior.ximalaya.com
-DOMAIN, adwbs.ximalaya.com
-DOMAIN-SUFFIX,ad.test.ximalaya.com
-DOMAIN-SUFFIX,adse.test.ximalaya.com
-DOMAIN-SUFFIX,adweb.test.ximalaya.com
-DOMAIN-SUFFIX,adweb.ximalaya.com
-DOMAIN-SUFFIX,linkeye.ximalaya.com
-DOMAIN-SUFFIX,location.ximalaya.com
-DOMAIN-SUFFIX,xdcs-collector.ximalaya.com
-DOMAIN-SUFFIX,ad.ximalaya.com
-DOMAIN-SUFFIX,adse.ximalaya.com
-DOMAIN-SUFFIX,adse.wsa.ximalaya.com
-DOMAIN-SUFFIX,adbehavior.wsa.ximalaya.com
-DOMAIN-SUFFIX,adsebs.ximalaya.com
-DOMAIN-SUFFIX,adbs.ximalaya.com
+DOMAIN, adbehavior.wsa.ximalaya.com
 
 # > 小红书
 DOMAIN, ads-img-qc.xhscdn.com
@@ -1495,6 +1493,14 @@ DOMAIN-SUFFIX, api-htp.beizi.biz
 DOMAIN-SUFFIX, yfanads.com
 DOMAIN-SUFFIX, 1rtb.net
 DOMAIN-SUFFIX, adwangmai.com
+DOMAIN-SUFFIX, yunxinfw.com
+DOMAIN-SUFFIX, bridgeoos.com
+DOMAIN-SUFFIX, cloooud.com
+DOMAIN-SUFFIX, baihemob.com
+DOMAIN-SUFFIX, ad.bwton.com
+DOMAIN-SUFFIX, api.wxcjgg.cn
+DOMAIN-SUFFIX, shunchangzhixing.com
+IP-CIDR, 114.132.165.205/32
 
 # > 新浪
 DOMAIN-SUFFIX,beacon.sina.com.cn
@@ -9686,7 +9692,6 @@ DOMAIN-SUFFIX, sape.ru
 DOMAIN-SUFFIX, tns-counter.ru
 DOMAIN-SUFFIX, winlinebet.ru
 DOMAIN-SUFFIX, yadro.ru
-DOMAIN-SUFFIX, yandex.ru
 DOMAIN-SUFFIX, ad.3dnews.ru
 DOMAIN-SUFFIX, rtb.com.ru
 DOMAIN-SUFFIX, dmg.digitaltarget.ru
@@ -9708,9 +9713,6 @@ DOMAIN-SUFFIX, pixel.vihub.ru
 DOMAIN-SUFFIX, ad.xmovies8.ru
 DOMAIN-SUFFIX, counter.yadro.ru
 DOMAIN-SUFFIX, mg.yadro.ru
-DOMAIN-SUFFIX, an.yandex.ru
-DOMAIN-SUFFIX, mc.yandex.ru
-DOMAIN-SUFFIX, mc.yandex.ru
 DOMAIN-SUFFIX, spb.bid.run
 DOMAIN-SUFFIX, adrotator.se
 DOMAIN-SUFFIX, ingest.sentry
@@ -9866,6 +9868,15 @@ DOMAIN-SUFFIX, yumcs.xiaohuau.xyz
 DOMAIN-SUFFIX, banner.itweb.co.za
 DOMAIN-SUFFIX, banners.itweb.co.za
 DOMAIN-SUFFIX, xn--3bs795g.zone
+DOMAIN-SUFFIX, ppezijkacga.com
+DOMAIN-SUFFIX, kreopbkabsit.com
+DOMAIN-SUFFIX, admiitad.com
+DOMAIN-SUFFIX, thelifeandmore.com
+DOMAIN-SUFFIX, fractionfridgejudiciary.com
+DOMAIN-SUFFIX, ocponcphaafb.com
+DOMAIN-SUFFIX, tapwhigwy.com
+DOMAIN-SUFFIX, ahqovxli.com
+DOMAIN-SUFFIX, fipabtomqok.com
 
 # IPV4 addresses
 IP-CIDR, 117.177.248.17/32, no-resolve

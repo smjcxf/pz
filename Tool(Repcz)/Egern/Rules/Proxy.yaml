@@ -1,7 +1,8 @@
 # 规则名称: Proxy
-# 规则统计: 1056
+# 规则统计: 1112
 
 domain_set:
+  - 7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
   - ccmdl.adobe.com
   - community.oneplus.com
   - ees.elsevier.com
@@ -13,6 +14,8 @@ domain_set:
   - store.ui.com.cn
   - wego.here.com
 domain_suffix_set:
+  - 123av.com
+  - 123av.me
   - 123rf.com
   - 18comic.org
   - 18comic.vip
@@ -41,6 +44,7 @@ domain_suffix_set:
   - abc.com
   - abc.xyz
   - abebooks.com
+  - about.me
   - ac
   - accountkit.com
   - activated.win
@@ -55,6 +59,8 @@ domain_suffix_set:
   - aimoon.com
   - airav.cc
   - airav.io
+  - airtable.com
+  - airtableusercontent.com
   - akamai.net
   - akamaihd.net
   - amazon.com
@@ -69,6 +75,7 @@ domain_suffix_set:
   - ant.design
   - anyporn.com
   - anysex.com
+  - ao3.org
   - aol.com
   - apernet.io
   - apibay.org
@@ -102,6 +109,7 @@ domain_suffix_set:
   - autodraw.com
   - avg.com
   - avgle.com
+  - avtoday.io
   - aweber.com
   - aws
   - axios.com
@@ -117,6 +125,7 @@ domain_suffix_set:
   - bbc.com
   - bblmw.com
   - be
+  - beacondb.net
   - behance.net
   - bestbuy.com
   - bet365.com
@@ -237,6 +246,7 @@ domain_suffix_set:
   - deepmind.com
   - deezer.com
   - deno.com
+  - desmos.com
   - detnews.com
   - dev
   - deviantart.com
@@ -248,6 +258,7 @@ domain_suffix_set:
   - discourse.group
   - dish.com
   - disqus.com
+  - distrowatch.com
   - dk
   - dlsite.com
   - dmcdn.net
@@ -287,6 +298,7 @@ domain_suffix_set:
   - elgoog.im
   - engadget.com
   - eporner.com
+  - ero-video.net
   - eroterest.net
   - es
   - etherscan.io
@@ -316,6 +328,7 @@ domain_suffix_set:
   - feedly.com
   - fide.com
   - figma.com
+  - findagrave.com
   - firebase.com
   - firebaseio.com
   - firefox.com
@@ -329,6 +342,7 @@ domain_suffix_set:
   - fm
   - fo
   - forbes.com
+  - fosshub.com
   - foxnews.com
   - fr
   - freedownloadmanager.org
@@ -360,6 +374,7 @@ domain_suffix_set:
   - ghostery.com
   - girlsgogames.com
   - git.io
+  - gitbook.com
   - gitbook.io
   - github.com
   - github.io
@@ -372,6 +387,7 @@ domain_suffix_set:
   - gitkraken.com
   - gitlab.com
   - gitlab.io
+  - gitlab.net
   - gl
   - gle
   - glitch.com
@@ -426,6 +442,7 @@ domain_suffix_set:
   - hinet.net
   - hk
   - hk01.com
+  - hkepc.com
   - holopin.io
   - homedepot.com
   - hostloc.com
@@ -441,6 +458,7 @@ domain_suffix_set:
   - huobi.pro
   - hwinfo.com
   - hyvor.com
+  - iaea.org
   - iana.org
   - ibb.co
   - ibm.com
@@ -457,6 +475,7 @@ domain_suffix_set:
   - iloveimg.com
   - imagefap.com
   - imagekit.io
+  - imagepost.com
   - imagevenue.com
   - imdb.com
   - imgflip.com
@@ -482,10 +501,12 @@ domain_suffix_set:
   - it
   - itasoftware.com
   - ixxx.com
+  - j.mp
   - jav.pw
   - java.com
   - javbus.com
   - javdb.com
+  - javdove.com
   - javhd.com
   - javhd.today
   - javlibrary.com
@@ -508,11 +529,13 @@ domain_suffix_set:
   - kakao.com
   - kali.org
   - kde.org
+  - keycdn.com
   - kg
   - kick.com
   - kik.com
   - kinja.com
   - kisscos.net
+  - kknews.cc
   - ko-fi.com
   - kobo.com
   - komoot.com
@@ -546,11 +569,13 @@ domain_suffix_set:
   - linkedin.com
   - linux.do
   - list-manage.com
+  - liteapks.com
   - live-video.net
   - livejasmin.com
   - localazy.com
   - logto.io
   - lol
+  - lumendatabase.org
   - ly
   - lynxjs.org
   - m.me
@@ -564,6 +589,7 @@ domain_suffix_set:
   - mangafox.me
   - manhuabika.com
   - mapbox.com
+  - maptiler.com
   - material.io
   - matrix.org
   - matters.town
@@ -571,6 +597,7 @@ domain_suffix_set:
   - md
   - medallia.com
   - mediafire.com
+  - mediawiki.org
   - medium.com
   - meetup.com
   - mega.io
@@ -583,6 +610,7 @@ domain_suffix_set:
   - mil
   - minecraft-services.net
   - minecraft.net
+  - minecraft.wiki
   - minecraftforum.net
   - minecraftservices.com
   - miniclip.com
@@ -597,6 +625,7 @@ domain_suffix_set:
   - mojang.com
   - monica.im
   - moomoo.com
+  - mooo.com
   - motherless.com
   - moviefap.com
   - mozilla.com
@@ -672,10 +701,13 @@ domain_suffix_set:
   - okcoin.com
   - okex.com
   - okx.com
+  - olelive.com
+  - olympics.com
   - one
   - one.com
   - onepluscommunityserver.com
   - opencollective.com
+  - openfreemap.org
   - opensea.io
   - openstreetmap.org
   - opentable.com
@@ -713,11 +745,14 @@ domain_suffix_set:
   - plurk.com
   - pm
   - podbean.com
+  - poeditor.com
   - polymer-project.org
   - porn.com
   - porngo.com
+  - pornhd.com
   - pornhub.com
   - pornhub.org
+  - pornmd.com
   - pornoxo.com
   - pornpics.com
   - porntrex.com
@@ -730,6 +765,7 @@ domain_suffix_set:
   - probit.com
   - producthunt.com
   - prometheus.io
+  - proporn.com
   - proton.me
   - prowritingaid.com
   - proxmox.com
@@ -749,6 +785,7 @@ domain_suffix_set:
   - re
   - readme.com
   - readthedocs.io
+  - realgfporn.com
   - recaptcha.net
   - recombee.com
   - redbull.com
@@ -785,6 +822,7 @@ domain_suffix_set:
   - sb
   - sc-cdn.net
   - schema.org
+  - scp-wiki.com
   - scp-wiki.net
   - scpdb.org
   - scpwiki.com
@@ -796,6 +834,7 @@ domain_suffix_set:
   - serverfault.com
   - serviporno.com
   - setapp.com
+  - sex
   - sex.com
   - sf.net
   - sfmcompile.club
@@ -826,6 +865,7 @@ domain_suffix_set:
   - snapchat.com
   - snapkit.co
   - social
+  - softonic.cn
   - softonic.com
   - sony.net
   - sophos.com
@@ -836,6 +876,7 @@ domain_suffix_set:
   - spankbang.com
   - spankinglibrary.com
   - spankingtube.com
+  - spec.org
   - speedtest.net
   - speedtestcustom.com
   - split.io
@@ -865,8 +906,12 @@ domain_suffix_set:
   - sysctl-explorer.net
   - t.co
   - t66y.com
+  - tailfin.cc
   - tailwindcss.com
+  - taipei
   - talkcc.com
+  - techpowerup.com
+  - techspot.com
   - tenor.com
   - tensorflow.org
   - terabox.com
@@ -890,6 +935,7 @@ domain_suffix_set:
   - thingiverse.com
   - thisav.com
   - thisvid.com
+  - threads.com
   - threads.net
   - thumbzilla.com
   - tiltbrush.com
@@ -903,6 +949,7 @@ domain_suffix_set:
   - tmagazine.com
   - tnaflix.com
   - to
+  - tokto-motion.net
   - tokyomotion.net
   - tokyonline.com
   - toolforge.org
@@ -949,7 +996,10 @@ domain_suffix_set:
   - vercel.live
   - verizon.com
   - verizonwireless.com
+  - vesselfinder.com
+  - vesselfinder.net
   - viber.com
+  - vice.com
   - victoriassecret.com
   - vikacg.com
   - vimeo.com
@@ -972,8 +1022,10 @@ domain_suffix_set:
   - washingtonpost.com
   - watch
   - waveprotocol.org
+  - waybackmachine.org
   - waymo.com
   - waze.com
+  - wdfiles.com
   - weather.com
   - webflow.com
   - webmproject.org
@@ -987,10 +1039,11 @@ domain_suffix_set:
   - whoer.net
   - widevine.com
   - wikawika.xyz
-  - wiki
+  - wiki2.org
   - wikibooks.org
   - wikidata.org
   - wikidot.com
+  - wikihow.com
   - wikileaks.org
   - wikimedia.org
   - wikinews.org
@@ -1007,6 +1060,7 @@ domain_suffix_set:
   - wireguard.com
   - wireshark.org
   - wix.com
+  - wmfusercontent.org
   - wnacg.com
   - wordpress.com
   - wordpress.org
@@ -1016,6 +1070,7 @@ domain_suffix_set:
   - ws
   - wsj.com
   - wsj.net
+  - x-art.com
   - x.com
   - x.company
   - xchina.co
@@ -1027,6 +1082,7 @@ domain_suffix_set:
   - xhcdn.com
   - xhlive.org
   - xing.com
+  - xkcd.com
   - xn--ngstr-lra8j.com
   - xnxx.com
   - xpressunblock.com

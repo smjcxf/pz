@@ -7,9 +7,11 @@
 [![](https://img.shields.io/github/followers/ddgksf2013?label=follow&style=social)](https://github.com/ddgksf2013)
 
 
-## 墨魚手記 [Update on 2025-06-22](https://github.com/ddgksf2013/Rewrite)  
+## 墨魚手記 [Update on 2025-08-05](https://github.com/ddgksf2013/Rewrite)  
 ### Tg 通知頻道 👉🏻[Cuttlefishの自留地](https://t.me/ddgksf2021)👈🏻  
-![Visitor Count](https://profile-counter.glitch.me/ddgksf2013/count.svg)  
+![Since](https://img.shields.io/badge/Since-2025年8月5日-blue)
+[![Hits](https://hits.sh/github.com/ddgksf2013.svg.svg?label=Visitor%20Count)](https://hits.sh/github.com/ddgksf2013.svg/)
+
 
 ![Cuttlefish's GitHub stats](https://github-readme-stats.vercel.app/api?username=ddgksf2013&show_icons=true&count_private=true&theme=vue)  
 
@@ -17,7 +19,7 @@
 > [***本库内容禁止公众号、自媒体进行任何形式的转载或发布***](https://github.com/ddgksf2013/ddgksf2013/issues)
 
 ## 1️⃣QuantumultX 小白2.0配置：
-* 配置更新时间：2025-06-15
+* 配置更新时间：2025-07-31
 * 墨鱼自用QX配置 [***Cuttlefish.conf***](https://gist.githubusercontent.com/ddgksf2013/cf38fcf85651f6b467df590da03dfcf8/raw/QuantumultX.conf) 
 * 上述配置支持QuantumultX商店最新版，包括图标库订阅、超级VIP、旧版应用推荐、IOS更新屏蔽、智能分流、墨鱼去开屏2.0、各种APP净化、Boxjs订阅、流媒体解锁查询、高德地图知乎去广告...
 * 可借助 idayer 为 GitHub 加速：在 ```https://raw.githubusercontent.com/``` 前添加 ```https://gh.idayer.com/```
@@ -172,7 +174,7 @@
 		<td > 33 </td> <td > Reddit去广告 </td> <td ><a href="https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/RedditAds.conf"><em>RedditAds.conf</em></a></td><td>ddgksf2013</td>  
     </tr>
 <tr>
-		<td > 34 </td> <td > 网易邮箱大师净化 </td> <td ><a href="https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/NeteaseMailAds.conf"><em>NeteaseMailAds.conf</em></a></td><td>ddgksf2013</td>  
+		<td > 34 </td> <td > 网易邮箱大师净化[JQ版] </td> <td ><a href="https://raw.githubusercontent.com/ddgksf2013/Rewrite/refs/heads/master/AdBlock/NeteaseMailAds.conf"><em>NeteaseMailAds.conf</em></a></td><td>ddgksf2013</td>  
     </tr>
 	<tr>
 		<td colspan="5">  </td>
@@ -256,7 +258,7 @@
 - [x] 书香门第网页签到 [*sxmd.js*](https://github.com/ddgksf2013/Scripts/raw/master/shuxiangmendi.js)
 - [x] 每天60s读懂世界 [*60s.js*](https://github.com/ddgksf2013/Scripts/raw/master/60s.js)
 - [x] Glados签到 [*glados.js*](https://gist.githubusercontent.com/ddgksf2013/32b3d37d78433a34370cbfb69780160d/raw/glados.js)
-- [x] Emby自动保号 [*emby.js*](https://gist.githubusercontent.com/ddgksf2013/e6793129fba99bb539cd7a49f74a48fa/raw/embyAutoSign.js)
+- [x] 携程旅行自动签到 [*ctrip.js*](https://raw.githubusercontent.com/ddgksf2013/Scripts/refs/heads/master/ctrip.js)
 > 更多的签到脚本请参考 [*@Chavyleung*](https://github.com/chavyleung) 提供的 [***Quantumult X 签到脚本***](https://github.com/chavyleung/scripts/blob/master/QuantumultX_Remote_Task.conf)
 
 ## 5️⃣QuantumultX 图标库
