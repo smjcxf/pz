@@ -254,7 +254,7 @@ rules:
     policy: DIRECT
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/AppleServers.yaml
-    policy: 国外网站
+    policy: 香港节点
 - rule_set:
     match: https://github.com/Repcz/Tool/raw/X/Egern/Rules/Lan.yaml
     policy: DIRECT
