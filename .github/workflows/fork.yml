@@ -1,6 +1,6 @@
 name: 备份多个仓库
 
-于:
+on:
   schedule:
     - cron: '0 */2 * * *'
   workflow_dispatch:
