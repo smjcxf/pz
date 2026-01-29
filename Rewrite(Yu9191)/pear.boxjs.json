@@ -1,0 +1,119 @@
+{
+    "id": "PearVideo.app",
+    "name": "PearVideo",
+    "author": "@Jsforbaby",
+    "icon": "https://raw.githubusercontent.com/sE7En0908/Icon/refs/heads/master/1818.png",
+    "repo": "https://t.me/GithubYu9191",
+    "apps": [
+        {
+            "id": "PearVideoSettings",
+            "name": "PearVideo 播放器设置",
+            "keys": [
+                "pear_player_select",
+                "pear_custom_scheme",
+                "pear_url_encode"
+            ],
+            "settings": [
+                {
+                    "id": "pear_player_select",
+                    "name": "播放器选择",
+                    "val": "lenna",
+                    "type": "selects",
+                    "items": [
+                        {
+                            "key": "lenna",
+                            "label": "Lenna 视频库"
+                        },
+                        {
+                            "key": "SenPlayer",
+                            "label": "SenPlayer (播放)"
+                        },
+                        {
+                            "key": "SenPlayer-dl",
+                            "label": "SenPlayer (下载+命名.mp4)"
+                        },
+                        {
+                            "key": "Infuse",
+                            "label": "Infuse 播放器"
+                        },
+                        {
+                            "key": "Fileball",
+                            "label": "Fileball 文件管理"
+                        },
+                        {
+                            "key": "VidHub",
+                            "label": "VidHub 影库"
+                        },
+                        {
+                            "key": "IINA",
+                            "label": "IINA 播放器"
+                        },
+                        {
+                            "key": "NPlayer",
+                            "label": "nPlayer"
+                        },
+                        {
+                            "key": "VLC",
+                            "label": "VLC 播放器"
+                        },
+                        {
+                            "key": "KMPlayer",
+                            "label": "KMPlayer"
+                        },
+                        {
+                            "key": "Alook",
+                            "label": "Alook 浏览器"
+                        },
+                        {
+                            "key": "Safari",
+                            "label": "Safari 浏览器"
+                        },
+                        {
+                            "key": "custom",
+                            "label": "🛠 自定义播放器"
+                        }
+                    ],
+                    "desc": "选择播放器（或使用自定义）"
+                },
+                {
+                    "id": "pear_custom_scheme",
+                    "name": "自定义 Scheme",
+                    "val": "",
+                    "type": "text",
+                    "desc": "例如: nplayer-http:// 或 myplayer://x-callback-url/play?url= 记得点旁边的保存按钮",
+                    "show": {
+                        "pear_player_select": "custom"
+                    }
+                },
+                {
+                    "id": "pear_url_encode",
+                    "name": "URL 编码",
+                    "val": "auto",
+                    "type": "selects",
+                    "items": [
+                        {
+                            "key": "auto",
+                            "label": "自动（推荐）"
+                        },
+                        {
+                            "key": "yes",
+                            "label": "强制编码"
+                        },
+                        {
+                            "key": "no",
+                            "label": "不编码"
+                        }
+                    ],
+                    "desc": "是否对播放地址进行 URL 编码（大部分 x-callback-url 需要编码）"
+                }
+            ],
+            "author": "@Jsforbaby",
+            "repo": "https://t.me/GithubYu9191",
+            "icons": [
+                "https://raw.githubusercontent.com/sE7En0908/Icon/refs/heads/master/1818.png",
+                "https://raw.githubusercontent.com/sE7En0908/Icon/refs/heads/master/GitHub.png"
+            ],
+            "script": "https://raw.githubusercontent.com/Yu9191/Rewrite/refs/heads/main/pear.js"
+        }
+    ]
+}
